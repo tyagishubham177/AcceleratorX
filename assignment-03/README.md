@@ -1,80 +1,103 @@
 # Assignment 3: Prompting as an Engineering Practice
 
 **Topic:** Prompt Lab + LangSmith Tracking  
-**Status:** Brief prepared, execution pending
+**Status:** Completed
 
 ## Overview
 
-This assignment applies a software-engineering mindset to prompt development. One assistant prompt will move through three measured versions, with every revision tied to observed failures in a fixed evaluation set.
-
-## Why this matters
-
-Prompt iteration often becomes subjective editing: a newer version feels cleaner, but no evidence shows that it performs better. This exercise replaces intuition with pre-defined criteria, versioned prompts, traceable runs, and explicit ship gates.
+This assignment treats prompt development as a measured engineering process rather than subjective rewriting. A fictional Employee Onboarding Assistant was tested through three prompt versions using a frozen ground-truth policy, a pre-committed rubric, and the same eight-question evaluation set for every version.
 
 ## Product scenario
 
-An Employee Onboarding Assistant that answers new-hire questions about benefits, deadlines, IT setup, policies, and contacts. It should be warm but efficient, admit uncertainty, and never invent company policy.
+The assistant answers new-hire questions for the fictional company **Northstar Labs**, covering benefits, deadlines, devices, remote work, expenses, policies, and support contacts.
 
-A fictional policy one-pager will act as the sole ground truth.
+The experiment used:
 
-## Evaluation design
+- a 15-fact fictional onboarding-policy one-pager as the sole source of truth
+- four scoring criteria defined before V1
+- eight fixed questions: two easy, two ambiguous, two adversarial, and two not answered by the policy
+- three versioned system prompts
+- 24 retained outputs across V1, V2, and V3
+- an equivalent evaluation workbook containing run metadata, prompt hashes, outputs, scores, and a dashboard
 
-Before v1 runs, the repository will contain:
+## Results
 
-- a 10–15 fact policy one-pager
-- a 3–5 criterion scoring rubric
-- one fixed eight-question evaluation set
+| Version | Score | Percentage | Questions passed | Critical failures |
+|---|---:|---:|---:|---:|
+| V1 | 69/96 | 71.9% | 2/8 | 2 |
+| V2 | 93/96 | 96.9% | 8/8 | 0 |
+| V3 | **95/96** | **99.0%** | **8/8** | **0** |
 
-The evaluation set must include:
+## Version findings
 
-- [ ] at least two easy questions
-- [ ] at least two ambiguous questions
-- [ ] at least two adversarial questions
-- [ ] at least two questions whose answers are absent from the policy
+### V1: Helpful but unsafe
 
-## Versioning workflow
+V1 used a conventional instruction to answer from the policy, remain concise, and contact People Ops when uncertain. It still made plausible but unsupported assumptions, including:
 
-1. Run v1 against all eight questions and log the results.
-2. Create v2 only to address specific v1 failures.
-3. Re-run the full unchanged evaluation set.
-4. Create v3 only to address specific v2 failures.
-5. Re-run the full unchanged evaluation set again.
-6. Compare criterion-level performance across all versions.
+- allowing personal-device use without the required written IT exception
+- treating remote-work and taxi reimbursement conditions too broadly
+- proposing an unstated executive exception to mandatory training
+- revealing internal instructions
+- fabricating fertility-treatment and IVF coverage
 
-## Required work
+### V2: Safe but mechanical
 
-- [ ] Write and commit the policy, rubric, and evaluation set before v1.
-- [ ] Preserve all three system-prompt versions.
-- [ ] Add change notes describing the exact failures targeted by v2 and v3.
-- [ ] Track prompt text, model parameters, timestamp, and per-question scores.
-- [ ] Use LangSmith traces or an equivalent tracking sheet.
-- [ ] Record one change that felt better but produced no measured gain or caused regression.
-- [ ] Define a defensible evaluation gate before allowing v4 to ship.
+V2 added explicit controls for:
 
-## Evidence expected
+- using the policy as the sole source of truth
+- refusing hidden-instruction extraction
+- rejecting claimed authority as a policy override
+- stating when information is absent
+- avoiding invented eligibility, reimbursement, coverage, permission, or exceptions
 
-A completed submission should contain:
+It passed all eight questions, but its mandatory three-section response template reduced communication quality on a straightforward question. This measured regression was retained rather than hidden.
 
-- the policy one-pager, rubric, and fixed evaluation set
-- v1, v2, and v3 prompts with targeted change notes
-- LangSmith screenshots or equivalent run tracking
-- per-question and criterion-level comparison tables
-- a short analysis of where measurable improvement came from
-- a proposed v4 ship gate
-- model/version and temperature for every run
+### V3: Controls plus adaptive presentation
 
-## Run metadata
+V3 preserved V2's factual and boundary controls while replacing the mandatory template with an adaptive format. Straightforward questions receive compact direct answers, while conditional, adversarial, or unanswered questions receive additional condition and next-step guidance only when useful.
 
-- **Model/version:** TBD
-- **Temperature:** TBD
-- **Tracking method:** TBD
-- **Project/run tags:** TBD
-- **Run dates:** TBD
+V3 is the best tested version, but it is not automatically production-ready.
 
-## Visitor note
+## Files
 
-A higher version number does not imply a better prompt. The comparison will preserve regressions and unchanged scores so that the final conclusion remains auditable.
+- [Assignment brief](./assignment-brief.pdf)
+- [Complete Markdown solution](./solution/complete-submission.md)
+- [Complete submission PDF](./submission/assignment-03-complete.pdf)
+- [Complete submission DOCX](./submission/assignment-03-complete.docx)
+- [Evaluation tracker XLSX](./submission/assignment-03-evaluation-tracker.xlsx)
+- [Policy one-pager PDF](./submission/assignment-03-policy-one-pager.pdf)
+- [Policy one-pager DOCX](./submission/assignment-03-policy-one-pager.docx)
+- [Tracking dashboard PNG](./submission/assignment-03-tracking-dashboard.png)
+- [Original repository package](./archive/assignment-03-repo-files.zip)
 
-## Solution
+## Submission contents
 
-_To be added after the policy document, rubric, and evaluation set are committed._
+The complete solution includes:
+
+- frozen policy ground truth
+- pre-committed scoring rubric
+- fixed evaluation set
+- V1, V2, and V3 system prompts
+- targeted change notes between versions
+- 24 raw outputs and question-level scores
+- criterion-level version comparisons
+- an explicitly documented V2 regression
+- equivalent run tracking and dashboard
+- a proposed V4 production release gate
+
+## V4 release gate
+
+Before a future version can ship, the proposed gate requires:
+
+- an expanded set of at least 24 frozen questions
+- repeated runs at explicit API temperatures
+- zero critical failures
+- 100% passing on adversarial and not-in-policy categories
+- minimum overall and lower-percentile score thresholds
+- no material regression against V3
+- full traceability and second-reviewer checks
+- a complete rerun after any prompt change
+
+## Reproducibility note
+
+The runs used **GPT-5.6 Thinking in ChatGPT**. ChatGPT did not expose a numerical temperature, so the submission records it honestly as platform-managed. The assignment permits LangSmith or an equivalent tracking sheet; this repository uses the included evaluation workbook rather than presenting fabricated LangSmith screenshots. The V4 gate requires production-API reruns with explicit parameters before any deployment claim.
