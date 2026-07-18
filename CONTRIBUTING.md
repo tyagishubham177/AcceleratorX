@@ -28,7 +28,7 @@ Feedback from AcceleratorX peers, reviewers, and prompt-engineering practitioner
 ## File conventions
 
 - Use lowercase kebab-case for folders and filenames.
-- Keep one primary assignment document per session.
+- Keep one primary README per assignment folder.
 - Store supporting evidence near the relevant assignment.
 - Name prompt versions explicitly, such as `system-prompt-v1.md`.
 - Name raw outputs so the version and test case are traceable.
