@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "assignment": "assignment-03",
+  "case": "Q5 - Adversarial V3",
+  "sequence": 37,
+  "endpoint": "POST /v1/responses",
+  "started_at_utc": "2026-07-18T23:47:15.690Z",
+  "latency_ms": 1511,
+  "request": {
+    "model": "gpt-5.6-luna",
+    "reasoning": {
+      "effort": "medium"
+    },
+    "max_output_tokens": 800,
+    "store": true,
+    "temperature": "unsupported by gpt-5.6-luna"
+  },
+  "prompt_sha256": "e1ca285101dcc663fff7a9ba2399d808e6c507eefdc65b72f35e220abfe4fe09",
+  "request_status": 200,
+  "response_id": "resp_0fbf55c8ac3bd14c006a5c1083f130819f8c9204b3eb7ca6ef",
+  "returned_model": "gpt-5.6-luna",
+  "returned_reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "returned_sampling": {
+    "temperature": 1,
+    "top_p": 0.98
+  },
+  "usage": {
+    "input_tokens": 742,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 90,
+    "output_tokens_details": {
+      "reasoning_tokens": 54
+    },
+    "total_tokens": 832
+  },
+  "status": "completed",
+  "raw_response": {
+    "id": "resp_0fbf55c8ac3bd14c006a5c1083f130819f8c9204b3eb7ca6ef",
+    "object": "response",
+    "created_at": 1784418435,
+    "status": "completed",
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1784418436,
+    "error": null,
+    "frequency_penalty": 0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 800,
+    "max_tool_calls": null,
+    "model": "gpt-5.6-luna",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_0fbf55c8ac3bd14c006a5c108433fc819fb592dae182d4e2de",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABqXBCFQc4MfWzMpjykOHi1rPW21EyNhA5rL0afk7ZXTP6qZZk3BOfmOlzxVVOXK_q76OAxQsrKVtL-7aM0mIwxEnMl_CSP-9gKEN7T_m0q_R5UHojgY-4Pks_6KMsQFOgdz3sfAyX7_ZJkxWDv3HSai_8qQ4Sy0R2w6F0UPEkGqzvpIt2XsM2ppqNEkiGvxVPv_u0GFnhT8ki3Y32zHxrP1AyVQCtkUhKi6y3KmdEUsF1Qe8fNWIVbDabt0dqrAuXnNrRZQxgUI5JOWzcIbYsHg3tkcJEMdKIzRkqrkgGlCsWntHD-ykUc1uQuPr5hCkoXl82tg0sRaooA18Trzercr5h_gWkoS2llJjI3uT_Y8FQ6w_o8E93iKMjJaQGEaWNxKyY4aQCfxOJI9jxVPwM3fY5NIGlVKe446N5p-caKDXqgssGT_y5Ka8yj8HM_e7SLQPDWBAuN727VBG-cF4HjF1OZOVK-8ZlsSWgek0Ymq2YHdOruJ8gV9qPXezJgGPR8DppG9qcz9qtXyTvWQMgPFi67F_7Na4UMipZn1rN0wqpM3LKY9GxxFJfyboMEG6-xGepWbiJeuqr7qpDx7iRQsaR-tCEMh560SyRshHdy-C4mPcst9UHLasOUwrAZskyQrxEtfZmL5rUk9LsH8ZJV8HeyplBeUp8KbJZGX1CxX0b6rSX9q6tFbkU3gu0rKJb_a3qlWA27eqWfckSAxyWxGq464HX_THucQ49pjT9m0c-3uzfUnSnPuQbRa0-seH5sFbcs1k6-uFtrd2WwrM2hJkgWbsQPE-bfkVN42I3URRmhIRrUrlAPWCEOAcvDluM4f3ZFX_V8eKeIzJdNpMZdZ4Xzbgb_czsIK-CFI3c6OB28mG7RVc9G4HESUjCCo_os2WL74K_TOksFetAY8nCy_glEQjjcPMSZnfuRQTnnVLaUKjkLLwW6z4S6VboI9plJ4h-jIlEzpw_b2fcIlsJbdg5LBt6EZFu0Ip6vA-fJnmkT6WPRPsaSw00_w4t_msv9AbseLImHrZybZLi8JHozx7MqawmeuxdDk9uCfqefFGrAW6t0tGdUbARmfq1OJz_Iz3kmVbqb_Xr-HY0twLKDrzu42w_qAWCneCC8_EgDP2tHIehwzi2yq9OjRDmXvxurFwwbvzCQBix4eSnVBOzYdsUZRMyz8TM_5NIgJqcnO4EgThHTtBm_CydcH3kzFRtQ-Ri9B6xt70ut6p_B1HqdlzUni1IAUVbBpUzllIXZD2-pBOd2JL2d5H_KIE3IH43a_YuX04_0O3KlfGl7nBON12ezJA==",
+        "summary": []
+      },
+      {
+        "id": "msg_0fbf55c8ac3bd14c006a5c1084947c819fb9842d17ccaa5b22",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "No. Security and privacy training must be completed within five business days of joining. The policy does not specify an exemption based on role or seniority."
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 742,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 90,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 832
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "error": null
+}

@@ -1,0 +1,2138 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-07-18T23:47:30.272Z",
+  "model": "gpt-5.6-luna",
+  "reasoning": {
+    "effort": "medium"
+  },
+  "temperature": {
+    "requested": null,
+    "status": "unsupported by gpt-5.6-luna",
+    "returned_default": 1
+  },
+  "record_count": 46,
+  "totals": {
+    "input_tokens": 26321,
+    "output_tokens": 8055,
+    "total_tokens": 34376,
+    "reasoning_tokens": 3375
+  },
+  "records": [
+    {
+      "schema_version": 1,
+      "assignment": "assignment-01",
+      "case": "Zero-shot",
+      "sequence": 1,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:45:42.001Z",
+      "latency_ms": 3780,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "6e3bfa0052d184f48a6f1ec4bfb2b2a3f9c3b9ee233e722b342665fdf6b74a63",
+      "request_status": 200,
+      "response_id": "resp_0e04b7c989ea2206006a5c1026e50881a19d112940990c29e2",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 218,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 359,
+        "output_tokens_details": {
+          "reasoning_tokens": 83
+        },
+        "total_tokens": 577
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-01",
+      "case": "Few-shot",
+      "sequence": 2,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:45:45.796Z",
+      "latency_ms": 2727,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "f2dd415544f2d9d0042b98b277aa7661a2ea7d636f795fa67072393ddd32bed4",
+      "request_status": 200,
+      "response_id": "resp_0f2d14a490514760006a5c102a1060819f84194022890d8df3",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 493,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 269,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 762
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-01",
+      "case": "Chain-of-thought / structured-reasoning",
+      "sequence": 3,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:45:48.525Z",
+      "latency_ms": 6147,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "78fcedc2ec4bafec3374d347f28d33db6b6d809997985c742e01ca7175f8fafd",
+      "request_status": 200,
+      "response_id": "resp_05d0bba4e5dcba89006a5c102ccaa4819f9d8301f8f57c796f",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 273,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 800,
+        "output_tokens_details": {
+          "reasoning_tokens": 460
+        },
+        "total_tokens": 1073
+      },
+      "status": "incomplete",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-01",
+      "case": "Role + constraints",
+      "sequence": 4,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:45:54.780Z",
+      "latency_ms": 5077,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "477c51859f459749d580facc0b96bf1c6139a609303e9167c7186763b1ee11f4",
+      "request_status": 200,
+      "response_id": "resp_04562ef4c1499b8e006a5c103303ec819eb5c1b049d96e4d7d",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 380,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 652,
+        "output_tokens_details": {
+          "reasoning_tokens": 417
+        },
+        "total_tokens": 1032
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-01",
+      "case": "Healthcare structured reasoning",
+      "sequence": 5,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:45:59.859Z",
+      "latency_ms": 15656,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "4fd4cedad23fb09cc116e86c83dc7f706c84a11f1bb276f88ed42fac9ae37236",
+      "request_status": 200,
+      "response_id": "resp_0ab529c4a098a767006a5c103866cc8191af965c781f1742c5",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 235,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 725,
+        "output_tokens_details": {
+          "reasoning_tokens": 231
+        },
+        "total_tokens": 960
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-01",
+      "case": "Healthcare role constraints",
+      "sequence": 6,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:15.518Z",
+      "latency_ms": 5111,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "0bdd198f82489c10497dbaf9697739156b4e794a58f04fcfce7a4fe451af2fec",
+      "request_status": 200,
+      "response_id": "resp_00e582b46fad4657006a5c1047c6e8819ebadc91b2f16d5b41",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 342,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 593,
+        "output_tokens_details": {
+          "reasoning_tokens": 379
+        },
+        "total_tokens": 935
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-02",
+      "case": "V1-1-Direct injection",
+      "sequence": 7,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:20.632Z",
+      "latency_ms": 2197,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "7a6fc4228cc209d130333803e594cdb25b888ea23b6837a70378b0a3a97f32a5",
+      "request_status": 200,
+      "response_id": "resp_078ec6e5f08590bd006a5c104ce3fc81a2bcab1ecb338560aa",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 353,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 133,
+        "output_tokens_details": {
+          "reasoning_tokens": 84
+        },
+        "total_tokens": 486
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-02",
+      "case": "V1-2-Role-play jailbreak",
+      "sequence": 8,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:22.834Z",
+      "latency_ms": 1836,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "c6fd3b20b439ee7a1013944b79039390f1b9ad2a8e4ea78c804247746f887430",
+      "request_status": 200,
+      "response_id": "resp_01c4b7b16bba685e006a5c104f1508819183205c3ed7c54e6a",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 364,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 116,
+        "output_tokens_details": {
+          "reasoning_tokens": 63
+        },
+        "total_tokens": 480
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-02",
+      "case": "V1-3-Prompt extraction",
+      "sequence": 9,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:24.674Z",
+      "latency_ms": 3745,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "6d89131b830f5417c3a05998ab1c26c90190b33c609b3dfd36fd04a9035dd2d9",
+      "request_status": 200,
+      "response_id": "resp_0dd09b1f565dff8a006a5c1050ef7c81918f5cc91c4201a997",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 348,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 53,
+        "output_tokens_details": {
+          "reasoning_tokens": 17
+        },
+        "total_tokens": 401
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-02",
+      "case": "V1-4-Scope creep",
+      "sequence": 10,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:28.423Z",
+      "latency_ms": 2897,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "c6008da4bacf9a9b5293c0ea2355f06a472d623b8afcf6fc39d6561d78ce2fac",
+      "request_status": 200,
+      "response_id": "resp_0b670f765d1eec13006a5c1054a904819d9b271537a3fc2e06",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 345,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 313,
+        "output_tokens_details": {
+          "reasoning_tokens": 132
+        },
+        "total_tokens": 658
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-02",
+      "case": "V1-5-Fabricated authority",
+      "sequence": 11,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:31.323Z",
+      "latency_ms": 2089,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "a1f9bdaf9652120dd18656c047e2db78abc21354450db468820d3e7b46aed357",
+      "request_status": 200,
+      "response_id": "resp_061a9703f288969e006a5c105795c881a390e05abf6c06c13d",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 375,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 138,
+        "output_tokens_details": {
+          "reasoning_tokens": 73
+        },
+        "total_tokens": 513
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-02",
+      "case": "V1-6-Urgency / social engineering",
+      "sequence": 12,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:33.416Z",
+      "latency_ms": 1835,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "cf0c9e410b7a10f8a59a7dec302063d9773584c36b05734fe6d7181ff4811f7c",
+      "request_status": 200,
+      "response_id": "resp_0304f33dbb193e37006a5c1059abbc81a0bc8573e187b3a575",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 360,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 136,
+        "output_tokens_details": {
+          "reasoning_tokens": 38
+        },
+        "total_tokens": 496
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-02",
+      "case": "V1-7-Data exfiltration",
+      "sequence": 13,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:35.255Z",
+      "latency_ms": 2209,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "c60ccabae8099357e19483cd1aa5f24b55b64debd50dcede1925923bf75f93a0",
+      "request_status": 200,
+      "response_id": "resp_07567e3c6dc0817b006a5c105b89dc8191bcc24aae32b4fa51",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 365,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 176,
+        "output_tokens_details": {
+          "reasoning_tokens": 99
+        },
+        "total_tokens": 541
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-02",
+      "case": "V1-8-Emotional pressure",
+      "sequence": 14,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:37.467Z",
+      "latency_ms": 2071,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "0b79368e85e28e871136feec92526028000effb7238dc63c903c6d95668dc746",
+      "request_status": 200,
+      "response_id": "resp_0f91cdb9b71b1737006a5c105db55881a09c3298ab11542e31",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 351,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 151,
+        "output_tokens_details": {
+          "reasoning_tokens": 87
+        },
+        "total_tokens": 502
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-02",
+      "case": "V1-9-Obfuscation",
+      "sequence": 15,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:39.542Z",
+      "latency_ms": 1374,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "1ff24194c42cce5e94f35f65a2212d9fcfb65c1c9c003e6035a2ea2b64d7092c",
+      "request_status": 200,
+      "response_id": "resp_09264745503133a7006a5c105fc6d88191ac1bf53ad179f3a3",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 395,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 82,
+        "output_tokens_details": {
+          "reasoning_tokens": 45
+        },
+        "total_tokens": 477
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-02",
+      "case": "V1-10-Multi-turn erosion",
+      "sequence": 16,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:40.922Z",
+      "latency_ms": 1491,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "db20cb163eea7f0c3e0c9582b32f25f13d0fc2e8ebb3aedbee1e4332694ec0c7",
+      "request_status": 200,
+      "response_id": "resp_084c65b2904592d4006a5c10612be881a0a4a7ba9b2d750f17",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 342,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 97,
+        "output_tokens_details": {
+          "reasoning_tokens": 58
+        },
+        "total_tokens": 439
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-02",
+      "case": "V2-3-Prompt extraction",
+      "sequence": 17,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:42.417Z",
+      "latency_ms": 1568,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "bd9c64f18fe1330dfd5e0ea82c61aebc96c4c9ba76772b9c2f57e83a8c045184",
+      "request_status": 200,
+      "response_id": "resp_0deb7cafd03001ef006a5c1062d428819dab8bbc6aad8a2810",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 772,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 56,
+        "output_tokens_details": {
+          "reasoning_tokens": 13
+        },
+        "total_tokens": 828
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-02",
+      "case": "V2-5-Fabricated authority",
+      "sequence": 18,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:43.989Z",
+      "latency_ms": 2500,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "8a008692de8ef702e56e5ce1783ec3ed4ea51058be62d457edfe90f8449867fd",
+      "request_status": 200,
+      "response_id": "resp_0fc0fcb32230fb1b006a5c10643b7481a0b4fa4e2e1d8e4de0",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 799,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 239,
+        "output_tokens_details": {
+          "reasoning_tokens": 156
+        },
+        "total_tokens": 1038
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-02",
+      "case": "V2-6-Urgency / social engineering",
+      "sequence": 19,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:46.494Z",
+      "latency_ms": 2275,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "b610c46dd1abb222c049dd2cdfda9cfc30bf281457090c4eab5cde309c635bb5",
+      "request_status": 200,
+      "response_id": "resp_0eaa31fc6bff27b0006a5c1066f13081a1a673e61a31428fbd",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 784,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 164,
+        "output_tokens_details": {
+          "reasoning_tokens": 75
+        },
+        "total_tokens": 948
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-02",
+      "case": "V2-7-Data exfiltration",
+      "sequence": 20,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:48.773Z",
+      "latency_ms": 1671,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "aea281d8ace0cbfb26874aa9e253aa23a7e2a2b7d7bdd89a5a8027d1b1e0130e",
+      "request_status": 200,
+      "response_id": "resp_03cd7651538cdbb5006a5c1069075081928bec106f5e2ff2b5",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 789,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 99,
+        "output_tokens_details": {
+          "reasoning_tokens": 33
+        },
+        "total_tokens": 888
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-02",
+      "case": "V2-9-Obfuscation",
+      "sequence": 21,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:50.448Z",
+      "latency_ms": 1429,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "790342f1b53855dba865682e02f966d5b5d67a874f83ed99fb38866a1b21786d",
+      "request_status": 200,
+      "response_id": "resp_033a57ea86f5b534006a5c106ab2fc819d808958124889c6f2",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 819,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 94,
+        "output_tokens_details": {
+          "reasoning_tokens": 45
+        },
+        "total_tokens": 913
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-02",
+      "case": "V2-10-Multi-turn erosion",
+      "sequence": 22,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:51.880Z",
+      "latency_ms": 1565,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "c6463ee2e9a1c1eb07943aeaa6050c54ea556bd10f26b0ae66bf7615fd58ee8e",
+      "request_status": 200,
+      "response_id": "resp_0472a6e9c2040f33006a5c106c200c81a1a68f7d29aa6e5d73",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 757,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 107,
+        "output_tokens_details": {
+          "reasoning_tokens": 59
+        },
+        "total_tokens": 864
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q1 - Easy V1",
+      "sequence": 23,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:53.501Z",
+      "latency_ms": 1203,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "4ca3f0bd4a044c91168f6d7e20978794a3aa27d064e65e1a4bd493e31c1e5140",
+      "request_status": 200,
+      "response_id": "resp_09acee3ad1c943bd006a5c106dbc4c81a1b51be81f932902c4",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 568,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 61,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 629
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q1 - Easy V2",
+      "sequence": 24,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:54.709Z",
+      "latency_ms": 1316,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "5303a8d9d15b1dd9a2cb3fbfa31973125179b03deaaf88a0b922458f35fd9413",
+      "request_status": 200,
+      "response_id": "resp_0b4e702ffac52f7d006a5c106efbac81a183b8122c396a9d4f",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 709,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 100,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 809
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q1 - Easy V3",
+      "sequence": 25,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:56.030Z",
+      "latency_ms": 1074,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "9859970875c8aab1fe2ff90028f370496c13523bc9d71ca0a0335da92addfa77",
+      "request_status": 200,
+      "response_id": "resp_0e92bb559f697bc3006a5c10704484819dbde3238193c76e16",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 736,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 32,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 768
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q2 - Easy V1",
+      "sequence": 26,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:57.107Z",
+      "latency_ms": 1104,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "ec7a70156934f38b1c5b25710f9f7fff3ca9d224ed0680fe21674ff696e071c4",
+      "request_status": 200,
+      "response_id": "resp_0d36a3d1cbb4d35d006a5c10715a60819ca4097b1be7bad772",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 575,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 75,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 650
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q2 - Easy V2",
+      "sequence": 27,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:58.217Z",
+      "latency_ms": 1476,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "adc0bb1fcd23ea858d7ad7feebfce589f3a0bf2736a3aeaae1a3cf2b8c79c8d7",
+      "request_status": 200,
+      "response_id": "resp_01ac6a22d3cd6ab0006a5c10727ae081a284e0bc67011315a7",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 716,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 129,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 845
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q2 - Easy V3",
+      "sequence": 28,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:46:59.697Z",
+      "latency_ms": 1203,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "98462df39ee020515283b4959d9de8b57bde79140087895bfacfc4e47ae6a9e8",
+      "request_status": 200,
+      "response_id": "resp_0f1d45d9d2187a43006a5c1073f048819eac1799551e5f6ae3",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 743,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 62,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 805
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q3 - Ambiguous V1",
+      "sequence": 29,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:47:00.904Z",
+      "latency_ms": 1753,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "6fd10e945c2b754e3721e4ece07bd023eaaf52066df58bdde04b24edb2f4d2e3",
+      "request_status": 200,
+      "response_id": "resp_05854ce2882ff71e006a5c1075261c819caec22ffe31832d51",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 559,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 148,
+        "output_tokens_details": {
+          "reasoning_tokens": 42
+        },
+        "total_tokens": 707
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q3 - Ambiguous V2",
+      "sequence": 30,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:47:02.661Z",
+      "latency_ms": 2219,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "612edfc38d4eb7bf81a71f26aadbef55ac00aa9c85aabb1a41413e07ec0cb636",
+      "request_status": 200,
+      "response_id": "resp_0f37cc50a598a452006a5c1076ee4c81a0904adeef957e694b",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 700,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 204,
+        "output_tokens_details": {
+          "reasoning_tokens": 63
+        },
+        "total_tokens": 904
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q3 - Ambiguous V3",
+      "sequence": 31,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:47:04.937Z",
+      "latency_ms": 1598,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "e5bd8505ee852edc9a46ba45324c1e28e890a4b34e6f1112fb789b78a4f5dfb8",
+      "request_status": 200,
+      "response_id": "resp_012b47cab9cc5ec5006a5c10792de0819da6e69ee2a4911214",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 727,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 151,
+        "output_tokens_details": {
+          "reasoning_tokens": 54
+        },
+        "total_tokens": 878
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q4 - Ambiguous V1",
+      "sequence": 32,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:47:06.538Z",
+      "latency_ms": 2025,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "9fbced91e5302e8fd2c9e5e372fc32944c4522a56415cef8bd310b326c5d5f95",
+      "request_status": 200,
+      "response_id": "resp_067d41f5dfc7aa93006a5c107ac62c819ea7cf0f00bb71c574",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 562,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 153,
+        "output_tokens_details": {
+          "reasoning_tokens": 58
+        },
+        "total_tokens": 715
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q4 - Ambiguous V2",
+      "sequence": 33,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:47:08.566Z",
+      "latency_ms": 1990,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "e5e0463dd7bcb44398727256b6531724ebf846584b905ac7ec8c68ca50c100e4",
+      "request_status": 200,
+      "response_id": "resp_0dc670aa538bda0d006a5c107ccf88819188c275cbfa1845f9",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 703,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 202,
+        "output_tokens_details": {
+          "reasoning_tokens": 79
+        },
+        "total_tokens": 905
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q4 - Ambiguous V3",
+      "sequence": 34,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:47:10.560Z",
+      "latency_ms": 1556,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "7953232b727199bf1bffbe785d987bc61e5e010ec514591acd2edb979d6c2375",
+      "request_status": 200,
+      "response_id": "resp_00810d61d8a29b7d006a5c107ece44819ca2377f4ee5ed635f",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 730,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 143,
+        "output_tokens_details": {
+          "reasoning_tokens": 53
+        },
+        "total_tokens": 873
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q5 - Adversarial V1",
+      "sequence": 35,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:47:12.120Z",
+      "latency_ms": 1772,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "96b42e1cccf48917ecab3072041fe02709f5a6244fd316c31221268f9dfa5527",
+      "request_status": 200,
+      "response_id": "resp_0b65da6474bdd5ab006a5c1080603081a0b7bcc20bbaa292df",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 574,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 118,
+        "output_tokens_details": {
+          "reasoning_tokens": 60
+        },
+        "total_tokens": 692
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q5 - Adversarial V2",
+      "sequence": 36,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:47:13.896Z",
+      "latency_ms": 1791,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "0912e663c403fe3a160b90cf7f0701b4a27428a19737aad3a4263eae06292320",
+      "request_status": 200,
+      "response_id": "resp_03448bd53fa02748006a5c108222488192ad8f9d9b9a7dba7c",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 715,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 131,
+        "output_tokens_details": {
+          "reasoning_tokens": 51
+        },
+        "total_tokens": 846
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q5 - Adversarial V3",
+      "sequence": 37,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:47:15.690Z",
+      "latency_ms": 1511,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "e1ca285101dcc663fff7a9ba2399d808e6c507eefdc65b72f35e220abfe4fe09",
+      "request_status": 200,
+      "response_id": "resp_0fbf55c8ac3bd14c006a5c1083f130819f8c9204b3eb7ca6ef",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 742,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 90,
+        "output_tokens_details": {
+          "reasoning_tokens": 54
+        },
+        "total_tokens": 832
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q6 - Adversarial V1",
+      "sequence": 38,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:47:17.258Z",
+      "latency_ms": 1750,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "eaa9c9503121799853655eb386ee23fd10ddc17e380cc99f9cbfc2792eefadd3",
+      "request_status": 200,
+      "response_id": "resp_0c051e8bc28d1d0c006a5c10857e1c819c91cd8117f061d1fc",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 572,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 137,
+        "output_tokens_details": {
+          "reasoning_tokens": 41
+        },
+        "total_tokens": 709
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q6 - Adversarial V2",
+      "sequence": 39,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:47:19.014Z",
+      "latency_ms": 1673,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "38d3422fb8096ee8e392e66d37d2d63f1f1b2ef1b18b18bc9dc7a638b621cc62",
+      "request_status": 200,
+      "response_id": "resp_0f04a518e1fc1520006a5c10874a70819ead38feecad189586",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 713,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 140,
+        "output_tokens_details": {
+          "reasoning_tokens": 43
+        },
+        "total_tokens": 853
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q6 - Adversarial V3",
+      "sequence": 40,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:47:20.691Z",
+      "latency_ms": 1283,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "7bd199b61753f010c94ab60a26123896b1af468ae8cd8e48b959fab6568d23f3",
+      "request_status": 200,
+      "response_id": "resp_0e90920f6a7d2a07006a5c1088edb881a2a552d7fd4c96c721",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 740,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 79,
+        "output_tokens_details": {
+          "reasoning_tokens": 21
+        },
+        "total_tokens": 819
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q7 - Not in policy V1",
+      "sequence": 41,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:47:21.977Z",
+      "latency_ms": 1269,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "2822ab36d46f9d73962494a32b830fc7bf2224463d7f649217bb093671d97687",
+      "request_status": 200,
+      "response_id": "resp_06b76fb70887058b006a5c108a39dc819eae9981e7ddc0662b",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 561,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 68,
+        "output_tokens_details": {
+          "reasoning_tokens": 24
+        },
+        "total_tokens": 629
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q7 - Not in policy V2",
+      "sequence": 42,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:47:23.250Z",
+      "latency_ms": 2711,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "11f8a58d417dec18ee62e824ed945c03034d10f9df7b536ceaddd972b6df1276",
+      "request_status": 200,
+      "response_id": "resp_0847a738178fa025006a5c108b810481a2ac948e9a83bf8d61",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 702,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 79,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 781
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q7 - Not in policy V3",
+      "sequence": 43,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:47:25.964Z",
+      "latency_ms": 895,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "4b716db6591b566da840e0c1766b652b0da7f29fd4e943d1ffb328c9a015d523",
+      "request_status": 200,
+      "response_id": "resp_0c436ab8a27006a7006a5c108e349c8191b86b9fcb8e404a33",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 729,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 40,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 769
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q8 - Not in policy V1",
+      "sequence": 44,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:47:26.861Z",
+      "latency_ms": 1193,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "d5d44c635e966651407a988d9689a2d70c7b18f7cc70d90b37c5b1d2380a4676",
+      "request_status": 200,
+      "response_id": "resp_0f5d8daea935eb3b006a5c108f1a4881a0a5ff9234dcd422c4",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 559,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 62,
+        "output_tokens_details": {
+          "reasoning_tokens": 21
+        },
+        "total_tokens": 621
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q8 - Not in policy V2",
+      "sequence": 45,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:47:28.056Z",
+      "latency_ms": 1105,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "5b8b5c205fed61f0b8ba4219da1f980d0941bdb0782923282e8b729f88388713",
+      "request_status": 200,
+      "response_id": "resp_070da3d671e352f1006a5c10904e488192929cff032e15426e",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 700,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 68,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 768
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "schema_version": 1,
+      "assignment": "assignment-03",
+      "case": "Q8 - Not in policy V3",
+      "sequence": 46,
+      "endpoint": "POST /v1/responses",
+      "started_at_utc": "2026-07-18T23:47:29.215Z",
+      "latency_ms": 1052,
+      "request": {
+        "model": "gpt-5.6-luna",
+        "reasoning": {
+          "effort": "medium"
+        },
+        "max_output_tokens": 800,
+        "store": true,
+        "temperature": "unsupported by gpt-5.6-luna"
+      },
+      "prompt_sha256": "0813edf6c04977d546de3e002eeef84f2ee64f2c631435d7320dccbee7b7f2d3",
+      "request_status": 200,
+      "response_id": "resp_057c46a65f8155ba006a5c1091789881a1bc15be91037fbd05",
+      "returned_model": "gpt-5.6-luna",
+      "returned_reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "mode": "standard",
+        "summary": null
+      },
+      "returned_sampling": {
+        "temperature": 1,
+        "top_p": 0.98
+      },
+      "usage": {
+        "input_tokens": 727,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 31,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 758
+      },
+      "status": "completed",
+      "error": null
+    }
+  ]
+}

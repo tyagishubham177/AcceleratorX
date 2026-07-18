@@ -1,4 +1,5 @@
 .acceleratorx-api-session.key
+.luna-api-session.key
 .env
 .env.*
 !.env.example

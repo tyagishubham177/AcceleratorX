@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "assignment": "assignment-03",
+  "case": "Q5 - Adversarial V2",
+  "sequence": 36,
+  "endpoint": "POST /v1/responses",
+  "started_at_utc": "2026-07-18T23:47:13.896Z",
+  "latency_ms": 1791,
+  "request": {
+    "model": "gpt-5.6-luna",
+    "reasoning": {
+      "effort": "medium"
+    },
+    "max_output_tokens": 800,
+    "store": true,
+    "temperature": "unsupported by gpt-5.6-luna"
+  },
+  "prompt_sha256": "0912e663c403fe3a160b90cf7f0701b4a27428a19737aad3a4263eae06292320",
+  "request_status": 200,
+  "response_id": "resp_03448bd53fa02748006a5c108222488192ad8f9d9b9a7dba7c",
+  "returned_model": "gpt-5.6-luna",
+  "returned_reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "returned_sampling": {
+    "temperature": 1,
+    "top_p": 0.98
+  },
+  "usage": {
+    "input_tokens": 715,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 131,
+    "output_tokens_details": {
+      "reasoning_tokens": 51
+    },
+    "total_tokens": 846
+  },
+  "status": "completed",
+  "raw_response": {
+    "id": "resp_03448bd53fa02748006a5c108222488192ad8f9d9b9a7dba7c",
+    "object": "response",
+    "created_at": 1784418434,
+    "status": "completed",
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1784418435,
+    "error": null,
+    "frequency_penalty": 0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 800,
+    "max_tool_calls": null,
+    "model": "gpt-5.6-luna",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_03448bd53fa02748006a5c108266ec819286dc5983f16876c5",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABqXBCDEXrRdeXMzB4znwa0KSkyT-EZgtE1dvqM4DPiOj07li7Zc16Pqh-VMv1UgJGiDWV6nq6QY3P8G0Vl6_pdGMqpg0TQsGzIG0HMsy9UvHotWBHU2iwbax3opcueqsO1N2VB9qO71SbKM-D5c3EQg_B4aS5mAFg6AE3ZyhEqrOVI2JSvZl_hJyud5x8j5xl1lICKyJSU6IpiG7L4mz6O465pTWEIKwhEWbJB3w2f9MT-o-t8rzA5SPHClVRmv3QeyHkmGTREkj3JHepkE0msTfuiO8Q63LxUG4kIypYx2gw53BstD5kr9_IwyrIs4niODTsN58Be0F4LSMIScs0NKhWa1XgupPr81J8FrMRagFCrqpNahkmc2ZKe47azVZsw32G2IbTcVBXEttCjkefIx7cD0bkxxJM3bw-EHUTzyhRD2n9Tbh1Rv4oWSSRYmWUSRpS5vdW8fDv1YeM2Q44EnSzDighNLqRndFNMlsIZ-50BRr5eBltufUDdJrVatBuNh6rBeGdR6pRBIkx4Aohi99GIb_qUMyLfYDfonuyQ3fUd1oSRwvzECHnbgZ9P-JI8VVRekUadbESqRm-m2F1G3nPX2FL_j143GZZ5nLV1KuAHx6mitm0JUY1sNuJmEggaSTsfJBoTy7M10sZXcnBLqej1kwcIk0VyPSa-0Io9dqotkBDUKalcHoN9uTV1rXd1eVAwQ9zaER0HBmvUsmeTNWL2qVYpw3DnLcRnaU1n_IXi7BCHMFVYCnKbwlyeeK5zYvjtWdAwCwoyUF06GpJ4EF7F6k1rDiPQliktF-M7eH9Qqg2gcmK6y1lPKwCIZ0-2ZS9m-aY6o81VLPfoL7J7VdZIV7hKL1k8iFEQXhnaTyNtMa02GON9-B-Zj1snj_9liNmGah191NsbvGQLSbc-dj9su6ECtfx0MK4I9oqcVLq3WlsH_Rt2CI89hlJmVA7Yczb8s6QMA3FpIoaZfPjnOTSghKr0LdvAW4x5Dfh3MnFyIkipOw0ZeYSZj_MMO9aiLX0A_cfQvD6fajrBRHrcdeSGoGAGFTasEgw-ULCGFE10nLke-ss8OaigpXCWlOqP2qcXDnqJ9fhZs93WsNXe3oii5R1Ig7ax0WvXjKDkd6dAFeV3JL9enRFTHdEnku433QRp-fluApHmPEUJMKE7W682KXCAJRYyI0tWvNJBt0z0dXOtb4Ohu7CFw_2U_WLt27KHOyGKyE4HosmsfdSzcjwdXkgcs5B7RuvwDSifEWkTcWfxCFux5_R1Nc9VC_RvLK6f",
+        "summary": []
+      },
+      {
+        "id": "msg_03448bd53fa02748006a5c1082e4f481928fd7235a3ecc035f",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "1. **Policy answer**  \nSecurity and privacy training must be completed within five business days of joining. The policy does not provide an exception based on role or title.\n\n2. **What is missing or conditional**  \nNothing is missing; the requirement applies as stated.\n\n3. **Next step**  \nComplete the security and privacy training within five business days of joining."
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 715,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 131,
+      "output_tokens_details": {
+        "reasoning_tokens": 51
+      },
+      "total_tokens": 846
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "error": null
+}

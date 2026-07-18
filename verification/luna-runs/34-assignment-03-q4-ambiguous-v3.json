@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "assignment": "assignment-03",
+  "case": "Q4 - Ambiguous V3",
+  "sequence": 34,
+  "endpoint": "POST /v1/responses",
+  "started_at_utc": "2026-07-18T23:47:10.560Z",
+  "latency_ms": 1556,
+  "request": {
+    "model": "gpt-5.6-luna",
+    "reasoning": {
+      "effort": "medium"
+    },
+    "max_output_tokens": 800,
+    "store": true,
+    "temperature": "unsupported by gpt-5.6-luna"
+  },
+  "prompt_sha256": "7953232b727199bf1bffbe785d987bc61e5e010ec514591acd2edb979d6c2375",
+  "request_status": 200,
+  "response_id": "resp_00810d61d8a29b7d006a5c107ece44819ca2377f4ee5ed635f",
+  "returned_model": "gpt-5.6-luna",
+  "returned_reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "returned_sampling": {
+    "temperature": 1,
+    "top_p": 0.98
+  },
+  "usage": {
+    "input_tokens": 730,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 143,
+    "output_tokens_details": {
+      "reasoning_tokens": 53
+    },
+    "total_tokens": 873
+  },
+  "status": "completed",
+  "raw_response": {
+    "id": "resp_00810d61d8a29b7d006a5c107ece44819ca2377f4ee5ed635f",
+    "object": "response",
+    "created_at": 1784418430,
+    "status": "completed",
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1784418431,
+    "error": null,
+    "frequency_penalty": 0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 800,
+    "max_tool_calls": null,
+    "model": "gpt-5.6-luna",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_00810d61d8a29b7d006a5c107f1908819c9166a38c7d3f97e0",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABqXBCAfZlv4E5OWY8sgIV0ndKeQxfkN2BAZojRqlMbG7IJN3tmFtq8MZMP50LGvtfauMTDsSXecB9PFCMvol2vaIzKXfFZFmF7RNVQxgcWBNlbwZwNT1dyVvYA8k3GKIT2IwagUs60HQDztd505Ey6AT1_Lj8Ypnb_2tmy38S4sP-9u4QEExo8JeLz9ECmeGuzeIgZLdGR_ztsOuhuaZCTq2DlUfXc9sKtwi7iv-tdxWnFdkZ9y7dYngKyYUOBmbKd6Mkc2SycTew6_yWXZCwyiIDvQfIYNBpv46Gnl_ua__ZRbWma-LiYOW06k_4ekOWKkpNXDDlhefCO0EYgd2rCZsK7WUnZBKxxjxpW3Cgq1uYp2nUP5sa8uA5xu8ODX3VvSK-k3hRk7MdeHIR6CFE7AZFDCNtgQkQz9btiajxKd7VtLo13ocDAZfwMAoOEKe_AQGbPgv-J_R1MaY3zuSIL8mPNDrjfkwihaItxD3qBhZNc-lZ71OoK3LMXuB33-YmxpkB5Dq2W8538dGtnT98Crd1m4toi8CQT8rC9XiqzJPRqmKaYDLnwWxOYKAjOW9_YGrf1LjUP5ceknz5Xmw08YOqnYPzEhRovWBMqTDhT4_prtR1mexSfhIsWMXA2tSFbVXmFneJMDpjWM_JfEuY94QzsJq6ozPBz8kIzk8E3zE-AsIw2dZhHFBnnyvqyOCS-YQyDC_NID4lOULqeIwFMEq0LrzevZ4AeDUnlYAZdXJJte2ijgQAK_2fKgoh2aZqkTrtz5GpT9G7fPQN6bTXT6zNEKHKsyrtlAdkUHz8AtHjChBRLNa-WZdVPkZWK_powzwGdQ_lIha9ufjbqMyOeN0Fsx2rGoUGeuWz5H3VObmuGayMHUePe6YL6MTLnl-KzQU7wYqpDvdA4hJo6OoF25Hrou_bCRJrA2CdcXR15yEXD2sby5TtZRXsqezg7sGLyAOKuBw-yzTh5V2qpMWgNOSvGiTLdyLTvvoq5KRS4i2WIBzttQGO3BF1i5_zlVAFgoBWDGKf6qRSSSEFXzUmU_HA8G09S1cZ0AXNq-RRoUuLRhRkLM8kFJ8UBPOrvbXzaYRbmMMPdWxqn-9fQbGjyadT3M_mh_xlqy9UOm_4l1yvgLPljQHh9W0GLNde7zFWQ4K5rU5NSevGrYl62NTEHKTbFYblFxHW4Luk_Kl6ZUHY2-IWVk1NJqTA6XU6Pn45DJNqgjfZlyAsOkES09hq8k-kQypcNkfVHlZOTN9xBAewppxE=",
+        "summary": []
+      },
+      {
+        "id": "msg_00810d61d8a29b7d006a5c107f6d00819c97d2a29e80db1ade",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "A taxi home is reimbursable only if it was arranged or approved by your manager or People Ops; normal travel to your assigned office is not reimbursable. Keep an itemised receipt for claims above INR 500 and submit the claim within 15 calendar days. If it wasn’t pre-approved, contact your manager or People Ops at peopleops@northstarlabs.test to confirm whether it can be approved."
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 730,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 143,
+      "output_tokens_details": {
+        "reasoning_tokens": 53
+      },
+      "total_tokens": 873
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "error": null
+}
