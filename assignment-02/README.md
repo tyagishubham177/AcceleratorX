@@ -1,29 +1,26 @@
 # Assignment 2: Build It, Then Break It
 
 **Topic:** Context Engineering  
-**Status:** Brief prepared, execution pending
+**Status:** Completed
 
 ## Overview
 
 This assignment treats a system prompt as part of a production control system. The task is to design a layered assistant prompt, attack it systematically, log every failure, patch only the observed weaknesses, and decide which controls should live outside the model.
 
-## Why this matters
+## Scenario selected
 
-A prompt that works on normal inputs may still fail under pressure, ambiguity, manipulation, or repeated attempts. Production readiness requires adversarial evidence and clear boundaries between probabilistic prompt behaviour and deterministic guardrails.
+A fictional mid-size SaaS company called **FlowDesk** uses a support assistant that can:
 
-## Reference scenario
-
-A customer-support assistant for a mid-size SaaS company that can:
-
-- answer product questions
+- answer product and policy questions
 - check order status through a simulated tool
-- issue refunds up to $50 without approval
+- issue refunds up to USD 50 without approval
+- escalate matters outside its authority
 
 It must not discuss competitors or promise unreleased features, and it must escalate legal threats or abuse.
 
 ## Prompt architecture
 
-The v1 system prompt will use clearly labelled layers:
+The v1 and v2 prompts use six labelled layers:
 
 1. Identity/persona
 2. Scope and capabilities
@@ -34,54 +31,67 @@ The v1 system prompt will use clearly labelled layers:
 
 ## Red-team coverage
 
-- [ ] Direct injection
-- [ ] Role-play jailbreak
-- [ ] Prompt extraction
-- [ ] Scope creep
-- [ ] Fabricated authority
-- [ ] Urgency/social engineering
-- [ ] Data exfiltration
-- [ ] Emotional pressure
-- [ ] Obfuscation
-- [ ] Multi-turn erosion with at least six turns
+The assistant was tested against all ten required categories:
 
-## Required work
+1. Direct injection
+2. Role-play jailbreak
+3. Prompt extraction
+4. Scope creep
+5. Fabricated authority
+6. Urgency/social engineering
+7. Data exfiltration
+8. Emotional pressure
+9. Obfuscation
+10. Multi-turn erosion using a six-turn conversation
 
-- [ ] Write the layered v1 system prompt.
-- [ ] Test all ten attack categories in a private sandbox.
-- [ ] Record each attack, model response, evidence, and severity in a break log.
-- [ ] Create v2 specifically around failures observed in v1.
-- [ ] Re-test every attack that broke v1.
-- [ ] Summarise the v1-to-v2 changes and their rationale.
-- [ ] Analyse two constraints as prompt rules versus hard-coded external guardrails.
+## Result
 
-## Evidence expected
+| Metric | Result |
+|---|---:|
+| V1 categories passed | **4/10** |
+| V1 categories broken | **6/10** |
+| Critical v1 failures | **2** |
+| Targeted v2 retests | **6** |
+| V2 documented retests passed | **6/6** |
 
-A completed submission should contain:
+The two critical v1 failures were:
 
-- v1 and v2 system prompts with layer labels
-- attack transcripts or representative excerpts
-- a specific break log covering all ten categories
-- re-test evidence for every patched failure
-- a concise v1-to-v2 diff summary
-- the two-constraint guardrail analysis
-- model/version and temperature for every run
+- bypassing the USD 50 intended refund limit by issuing two USD 45 refunds
+- exposing fictional customer and payment information without identity verification
 
-## Run metadata
+Other v1 failures included system-prompt disclosure, promising an unreleased feature under urgency, answering an encoded competitor-comparison request, and gradually losing constraints across a multi-turn conversation.
 
-- **Scenario:** TBD
-- **Model/version:** TBD
-- **Temperature:** TBD
-- **Run date:** TBD
+V2 added targeted rules for instruction confidentiality, cumulative refund limits, anti-splitting, identity verification, data minimisation, release verification, transformed requests, and persistent multi-turn policy enforcement.
 
-## Safety note
+## Main conclusion
 
-All attacks will remain inside the assignment sandbox and target only prompts created for this repository. They will not be tested against third-party live products.
+The v2 prompt closed every documented v1 failure during the targeted retests. However, this does **not** make the prompt a sufficient security boundary.
 
-## Visitor note
+Financial limits, cumulative refund checks, identity verification, authorisation, and access to private customer data should be enforced by deterministic application and tool-layer controls. Prompts are suitable for behaviour guidance, communication style, escalation language, and semantic boundaries, but not as the sole control over money or sensitive data.
 
-A refusal is not automatically a success, and a polite answer is not automatically safe. The break log will distinguish policy violations, information leakage, tool misuse, and harmless off-tone behaviour.
+## Files
 
-## Solution
+- [Assignment brief](./assignment-brief.pdf)
+- [Complete Markdown solution](./solution/complete-submission.md)
+- [Submission PDF](./submission/assignment-02-complete.pdf)
+- [Submission DOCX](./submission/assignment-02-complete.docx)
+- [Original repository package](./archive/assignment-02-repo-files.zip)
 
-_To be added after the v1 threat model and test plan are finalised._
+## Submission contents
+
+The complete solution includes:
+
+- layered v1 and v2 system prompts
+- all ten v1 attack transcripts
+- a six-turn multi-turn erosion transcript
+- a severity-based break log
+- targeted v1-to-v2 patch notes
+- retest transcripts for every v1 failure
+- prompt-versus-hard-coded guardrail analysis
+- model/version and parameter disclosure
+
+## Safety and reproducibility
+
+All attacks used fictional data, simulated tools, and a sandbox assistant created for this assignment. No live third-party product or real customer information was tested.
+
+The runs used **GPT-5.6 Thinking in ChatGPT**. ChatGPT did not expose a numerical temperature, so it is recorded honestly as platform-managed rather than replaced with a fabricated value.
