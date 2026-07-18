@@ -24,7 +24,7 @@ Each assignment has its own folder. Supporting artefacts are stored alongside it
 
 External review identified two cross-cutting limitations: single-sample generations and the absence of numerical-temperature API runs. Additive verification work is tracked in [verification/README.md](./verification/README.md).
 
-The follow-up includes Assignment 2 regression and financial stress tests, a delayed scoring-consistency check, and explicit evidence-boundary appendices. Numerical-temperature API reruns remain unexecuted because no API credential was available; no run metadata has been fabricated.
+The follow-up includes Assignment 2 regression and financial stress tests, a delayed scoring-consistency check, explicit evidence-boundary appendices, and 36 genuine API reruns at temperature 0.2. The unedited records, response IDs, latency, token usage, and prompt hashes are in [verification/api-runs](./verification/api-runs/).
 
 ## Weekly snapshots
 

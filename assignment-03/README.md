@@ -100,4 +100,4 @@ Before a future version can ship, the proposed gate requires:
 
 ## Reproducibility note
 
-The runs used **GPT-5.6 Thinking in ChatGPT**. ChatGPT did not expose a numerical temperature, so the submission records it honestly as platform-managed. The assignment permits LangSmith or an equivalent tracking sheet; this repository uses the included evaluation workbook rather than presenting fabricated LangSmith screenshots. The V4 gate requires production-API reruns with explicit parameters before any deployment claim.
+The original ChatGPT runs remain historical evidence. A separate, additive API verification set reran Q1, Q5, and Q6 for V2 and V3 three times each at **temperature 0.2** using **gpt-4.1-mini**. Unedited outputs and measurable metadata are retained in [verification/api-runs](../verification/api-runs/). The assignment permits LangSmith or an equivalent tracking sheet; this repository uses the included evaluation workbook rather than presenting fabricated LangSmith screenshots.

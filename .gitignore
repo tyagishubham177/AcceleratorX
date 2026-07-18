@@ -1,0 +1,4 @@
+.acceleratorx-api-session.key
+.env
+.env.*
+!.env.example
