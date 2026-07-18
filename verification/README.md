@@ -2,6 +2,13 @@
 
 This folder tracks additive checks introduced after external review. Original prompts, raw outputs, score tables, and failure cases remain unchanged.
 
+## Evidence added
+
+- [Assignment 1 repeat-run verification appendix](../assignment-01/solution/appendix-repeat-runs.md)
+- [Assignment 2 regression and financial stress-test appendix](../assignment-02/solution/appendix-regression-and-stress-tests.md)
+- [Assignment 3 repeat-run and evidence-boundary appendix](../assignment-03/solution/appendix-repeat-runs-and-limitations.md)
+- [Delayed same-reviewer rescore log](../blind-rescore-log.md)
+
 ## Completed in this pass
 
 - Assignment 2: reran the four V1-passing categories against V2 as regression checks.
