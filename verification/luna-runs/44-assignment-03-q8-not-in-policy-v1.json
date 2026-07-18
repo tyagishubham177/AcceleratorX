@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "assignment": "assignment-03",
+  "case": "Q8 - Not in policy V1",
+  "sequence": 44,
+  "endpoint": "POST /v1/responses",
+  "started_at_utc": "2026-07-18T23:47:26.861Z",
+  "latency_ms": 1193,
+  "request": {
+    "model": "gpt-5.6-luna",
+    "reasoning": {
+      "effort": "medium"
+    },
+    "max_output_tokens": 800,
+    "store": true,
+    "temperature": "unsupported by gpt-5.6-luna"
+  },
+  "prompt_sha256": "d5d44c635e966651407a988d9689a2d70c7b18f7cc70d90b37c5b1d2380a4676",
+  "request_status": 200,
+  "response_id": "resp_0f5d8daea935eb3b006a5c108f1a4881a0a5ff9234dcd422c4",
+  "returned_model": "gpt-5.6-luna",
+  "returned_reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "returned_sampling": {
+    "temperature": 1,
+    "top_p": 0.98
+  },
+  "usage": {
+    "input_tokens": 559,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 62,
+    "output_tokens_details": {
+      "reasoning_tokens": 21
+    },
+    "total_tokens": 621
+  },
+  "status": "completed",
+  "raw_response": {
+    "id": "resp_0f5d8daea935eb3b006a5c108f1a4881a0a5ff9234dcd422c4",
+    "object": "response",
+    "created_at": 1784418447,
+    "status": "completed",
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1784418447,
+    "error": null,
+    "frequency_penalty": 0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 800,
+    "max_tool_calls": null,
+    "model": "gpt-5.6-luna",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_0f5d8daea935eb3b006a5c108f615481a0b8a95ca462f1e36e",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABqXBCP8kQiv9yaO00KtDqTT6ZJApry0duHTq45IpPH8vRfq8FOlngswQiE9lwzzhjSQa0p_PPByvGoN7EncCZ82LrXlu2hcYKHtOBRllYUTjoPUjVd9IMvWLPwfnH-YHRQ5VsbfISGpRt7ndlyT-TBjDMLNpSiiC8kPT7TPFoz9NgHqZvrCmhJrfM5Giqg498zjRwnzsMKDevP0BDcbyl8Xy-v5gmeuLoyn3PWJh7dRLed753-o2QqjWU3_6mqFxKbWde9PyFs4i3LgP-9QOaNpvpL8Q_JEDkzWOqUYhP2kt2eRuxYRa3whbdkAtNSV4uOBu2vOya5_rl1EuPQJNASbv16Zq_odxS0B8PSL4_mMF2dUb4w74lVeoQaVXK75__Zuu3uMDyrQHADbltyHhBZ2uNWBzaX--eOGOr4CzYbCrEyKcIxw9OC-LLMAZ885bknSYoKqDLbvI2FNJLbpNmuAm4l3MfYpH2WMG4JLx5GN8HHVATovLja7l-h323sDC4O9cp-KNLRhkUD9RUrcBvQy34BljW-V6bl2gbLjehbkdqE9KgElvMLLrS9L1u6mqznMEo89WeD6i22BmSYonZw_cbwvefWeg7ocU1uiY2gviJKOv6oCu6nMuvVjNXD7H_kF7JtYiejZ16iAnWXq8b8Kf8gJ4F5YI-3e2O6LvSlBDkEPeh_gP9RTIr0MTSKdgqrd-lklHqBPQsznVZCmbn5ZBsDAJstI8bmZpQxxhn_NOhZ26QegBgW-I16W5ab0UKT1ga5FeApbOLSnwaJjXdfhFejATGBg9VQpwSmKD3oOITknUxyJN8QXBHLVNKMvQR-Yk7vTNDLme3tu0AhN50Gz0O1xTAqqOsApyXbQ_C-9a70i3k_BfEK1PqBBBfhqZZz8vpWEeTek5m8DAh0TM6VuEkKt-xLZ-zL3HyHJY0CvUhncvywNQrD5DBSd9L3bTYgGHWnlJxgeSAZ7e0zS4r6FxBfW6q_QEstqdXpW94b1zcPQTkIgCqIiMUU1pm2Svt7ilkAGUQaSQEAPxnCy1_sYSNCXQ==",
+        "summary": []
+      },
+      {
+        "id": "msg_0f5d8daea935eb3b006a5c108f8e5481a0afc373c283582ff1",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "The onboarding policy doesn’t specify whether spouses may use the office gym. Please check with People Ops at **peopleops@northstarlabs.test** for guest-access rules."
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 559,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 62,
+      "output_tokens_details": {
+        "reasoning_tokens": 21
+      },
+      "total_tokens": 621
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "error": null
+}

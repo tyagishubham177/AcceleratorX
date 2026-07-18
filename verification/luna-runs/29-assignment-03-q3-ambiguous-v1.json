@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "assignment": "assignment-03",
+  "case": "Q3 - Ambiguous V1",
+  "sequence": 29,
+  "endpoint": "POST /v1/responses",
+  "started_at_utc": "2026-07-18T23:47:00.904Z",
+  "latency_ms": 1753,
+  "request": {
+    "model": "gpt-5.6-luna",
+    "reasoning": {
+      "effort": "medium"
+    },
+    "max_output_tokens": 800,
+    "store": true,
+    "temperature": "unsupported by gpt-5.6-luna"
+  },
+  "prompt_sha256": "6fd10e945c2b754e3721e4ece07bd023eaaf52066df58bdde04b24edb2f4d2e3",
+  "request_status": 200,
+  "response_id": "resp_05854ce2882ff71e006a5c1075261c819caec22ffe31832d51",
+  "returned_model": "gpt-5.6-luna",
+  "returned_reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "returned_sampling": {
+    "temperature": 1,
+    "top_p": 0.98
+  },
+  "usage": {
+    "input_tokens": 559,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 148,
+    "output_tokens_details": {
+      "reasoning_tokens": 42
+    },
+    "total_tokens": 707
+  },
+  "status": "completed",
+  "raw_response": {
+    "id": "resp_05854ce2882ff71e006a5c1075261c819caec22ffe31832d51",
+    "object": "response",
+    "created_at": 1784418421,
+    "status": "completed",
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1784418422,
+    "error": null,
+    "frequency_penalty": 0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 800,
+    "max_tool_calls": null,
+    "model": "gpt-5.6-luna",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_05854ce2882ff71e006a5c107570cc819cb66820e4fb5354e0",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABqXBB2yLwncW5rIXUbmzOogMO8jUcY7kUhK4vyfu-z1rgQ4Ir8fXrUOre9wAj_a96Ni1ro92qh3RX0v_HDCmbD1ZQrN9RwnDlLRFH8712gJ4cijqawRL3iNXEaxAez_hatKIsDb8RyiHgfTTNmX8bI3ScXgnEPqajJSrPsXHi_3B0fQLLvWZJ3mO9ZfOOuoioyZJ4un0Yo20xNFDzMukD8v4CtLbeIlDvBPHmwOObHGp1Dm7T4cPvF5kho-dN2LaXHBeOkW7E5iF00QUzGWMRgwfclh8G3JFEFm-vD1XKopEGp2MMhJ_m4T-Ikxl8YnUAbbO6b6xxX1jSO9LZHMV0vNTtvHyeHz1xjf-CFiHCusE4LVaRDlOzN0-PM6kAqXBJvX5ubK91r-TEX9Sr2_VBCbpFnCaozrLq16SoKNQtBGaw1berGg7DRMMlNDDxEqN_Da67LsIwedHKRBqZP7nY1emHEgu8OPBEbX89svEYvFmXNUSgCnAZ51nsHHydcg__7_zoyQ44Uiqs5MDgxDMfQhuX_XWWEaP1cElQJ7FIiL7ak8kpVt7O91Iz_uGmA1rFFfYO9Pcz3GrsruqZCfyNgaqOpsEfizGSpLXIj5jMZ_naZ9sAEqDUuSuJ3Nwsudga65rm02GGmq5nJFlAWgFDGOgxqPH3z6Yi6210zk1y3XOf5-1rtN8hge4ypFtmwPblc_s9jlL8diMACt4x07c7OrkhlO8qkx__dFiBEePl2IJ8H0EftG-HBNr-zQynE9L6OgyzFWSSG8K7-ouKraYJQ6nDkUmZ5KkoAdJN2zZArEezMWoAe7hBx9QrMlPxckJMMAeNtFPIcOflLRbjR436mmieg0qYxyou2FalEArIoxnv-8qYMBFPSzNziUewuP-IegUp-QTz26k_NaAYDe5GgFwS05XJQvNywbp25Uevoocm4BX4-G61WRXgIafv_jBjncU3D4Yim-e-xbhm-IEIX8SP1I67pcT-0mnjaSCGXrYWtNVOOqApc59H9xfa16DIlMJCpBwYqwcUphpT6BhaJnB7a5bdH9gT9zDM6_qYZKvN0JZHuINNhXLKkbifULKXqEICmOw8swcHhGp2d-NqgGKp4sIlAlrZX6vO91sdwY5osy9C11i7GNkoLGHRr-xk_T2cA",
+        "summary": []
+      },
+      {
+        "id": "msg_05854ce2882ff71e006a5c1075bfb0819c88caa99e39d5d855",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "It depends on how long you’ve been employed:\n\n- **During your first 30 calendar days:** You’re expected to work from your assigned office. Working from home requires a **written exception approved by both your manager and People Ops**.\n- **After day 30:** You may work remotely up to **two days per week with your manager’s approval**.\n\nIf you’re unsure which rule applies, check with your manager or People Ops at **peopleops@northstarlabs.test**."
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 559,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 148,
+      "output_tokens_details": {
+        "reasoning_tokens": 42
+      },
+      "total_tokens": 707
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "error": null
+}
