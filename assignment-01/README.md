@@ -1,58 +1,62 @@
 # Assignment 1: The Technique Ladder
 
 **Topic:** Prompt Engineering Foundations  
-**Status:** Brief prepared, execution pending
+**Status:** Completed
 
 ## Overview
 
-This assignment tests whether a simpler and cheaper prompting technique can outperform a more elaborate one for a real business task. The comparison must be controlled: the task input stays fixed, the scoring rubric is written first, and every raw output is retained.
+This assignment tests whether a simpler and cheaper prompting technique can outperform a more elaborate one for a real business task. The comparison is controlled: the underlying task input remains fixed, the scoring rubric is defined before any runs, and all raw outputs are retained without editing.
 
-## Why this matters
+## Business task selected
 
-Prompt quality is not measured by how sophisticated the prompt looks. A production choice should balance output quality with token cost, latency, consistency, and maintenance effort.
+Convert a technical checkout-service incident into:
 
-## Core comparison
+1. a concise external stakeholder update; and
+2. a prioritised internal engineering action recommendation.
 
-The same task will be run using four approaches:
+The scenario reflects a common software-delivery problem: converting technical evidence into useful communication for customers, Support, Operations, and engineering teams.
+
+## Techniques compared
 
 1. Zero-shot
-2. Few-shot with 2–3 original examples
-3. Reasoning-led prompting
+2. Few-shot with original examples
+3. Structured reasoning
 4. Role + constraints
 
-## Required work
+## Result
 
-- [ ] Choose one business task and keep the underlying input identical across runs.
-- [ ] Define three concrete scoring criteria with a 1–5 scale before running prompts.
-- [ ] Run all four prompting approaches.
-- [ ] Preserve all prompts and raw outputs without editing.
-- [ ] Score all outputs using the original rubric.
-- [ ] Construct a genuine failure case where the winning method fails or a simpler method performs better.
-- [ ] Diagnose the failure in 3–5 sentences.
-- [ ] Decide which technique should ship, including token and latency trade-offs.
+| Rank | Technique | Score |
+|---:|---|---:|
+| 1 | Role + constraints | **15/15** |
+| 2 | Structured reasoning | **14/15** |
+| 3 | Zero-shot | **13/15** |
+| 4 | Few-shot | **12/15** |
 
-## Evidence expected
+The recommended production approach is **role + constraints**. It provided the strongest audience separation, factual discipline, and actionability without the example overhead of few-shot prompting or the longer output associated with structured reasoning.
 
-A completed submission should contain:
+A separate healthcare-safety failure case showed that this technique is not universally superior. Its commerce-specific action schema omitted a necessary clinical-safety escalation, allowing structured reasoning to outperform it.
 
+## Files
+
+- [Assignment brief](./assignment-brief.pdf)
+- [Complete Markdown solution](./solution/complete-submission.md)
+- [Submission PDF](./submission/assignment-01-complete.pdf)
+- [Submission DOCX](./submission/assignment-01-complete.docx)
+- [Original repository package](./archive/assignment-01-repo-files.zip)
+
+## Submission contents
+
+The complete solution includes:
+
+- the rubric written before the runs
 - four prompts and four unedited outputs
-- the pre-committed scoring rubric
-- a completed comparison table
-- the failure-case transcript
-- a cost-aware ship decision
-- model/version and temperature for every run
+- a filled score table
+- scoring rationale
+- a genuine failure-case transcript and diagnosis
+- token and latency comparison
+- the final ship decision
+- model/version and parameter disclosure
 
-## Run metadata
+## Reproducibility note
 
-- **Business task:** TBD
-- **Model/version:** TBD
-- **Temperature:** TBD
-- **Run date:** TBD
-
-## Visitor note
-
-The useful part of this exercise is the controlled comparison, not a supposedly universal winning technique. Results may change with the task, examples, model, and parameter settings.
-
-## Solution
-
-_To be added after the task and evaluation design are finalised._
+The runs used **GPT-5.6 Thinking in ChatGPT**. ChatGPT did not expose a numerical temperature, so it is recorded honestly as platform-managed rather than replaced with a fabricated value.
