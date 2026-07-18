@@ -59,4 +59,4 @@ The complete solution includes:
 
 ## Reproducibility note
 
-The runs used **GPT-5.6 Thinking in ChatGPT**. ChatGPT did not expose a numerical temperature, so it is recorded honestly as platform-managed rather than replaced with a fabricated value.
+The original ChatGPT runs remain historical evidence. A separate, additive API verification set ran the primary and healthcare comparisons three times each at **temperature 0.2** using **gpt-4.1-mini**. Unedited outputs and measurable metadata are retained in [verification/api-runs](../verification/api-runs/); they do not overwrite the original transcripts.
