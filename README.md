@@ -20,4 +20,10 @@ You will find assignment briefs, prompts, raw model outputs, evaluation tables, 
 
 Each assignment has its own folder. Supporting artefacts will be added alongside it where relevant.
 
+## Weekly snapshots
+
+A GitHub Actions workflow creates an annotated tag from `main` every Monday. Snapshot tags use the format `weekly-snapshot-YYYY-MM-DD`, and only the five newest weekly snapshot tags are retained.
+
+These tags provide convenient restore points. They supplement Git history rather than replace branches, pull requests, or backups.
+
 Feedback is welcome through issues or pull requests. See [CONTRIBUTING.md](./CONTRIBUTING.md) for basic contribution guidance.
