@@ -18,7 +18,13 @@ You will find assignment briefs, prompts, raw model outputs, evaluation tables, 
 | [02: Build It, Then Break It](./assignment-02/README.md) | Context Engineering | A layered system prompt, adversarial tests, fixes, and guardrail analysis |
 | [03: Prompting as an Engineering Practice](./assignment-03/README.md) | Prompt Lab + LangSmith | Versioned prompt iterations, evaluation results, and run tracking |
 
-Each assignment has its own folder. Supporting artefacts will be added alongside it where relevant.
+Each assignment has its own folder. Supporting artefacts are stored alongside it where relevant.
+
+## Reproducibility follow-up
+
+External review identified two cross-cutting limitations: single-sample generations and the absence of numerical-temperature API runs. Additive verification work is tracked in [verification/README.md](./verification/README.md).
+
+The follow-up includes Assignment 2 regression and financial stress tests, a delayed scoring-consistency check, and explicit evidence-boundary appendices. Numerical-temperature API reruns remain unexecuted because no API credential was available; no run metadata has been fabricated.
 
 ## Weekly snapshots
 
