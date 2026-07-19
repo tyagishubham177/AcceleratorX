@@ -2,7 +2,7 @@
 
 Assignment-wise solutions for AcceleratorX work on prompt engineering, context engineering, red-teaming, evaluation, and prompt tracking.
 
-> Independent participant repository. Use it for learning and review, not for copying submissions.
+> Independent participant repository. Use it for learning and review, NOT FOR copying submissions.
 
 ## Start here
 
