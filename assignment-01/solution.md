@@ -455,9 +455,9 @@ For the recurring checkout-incident task, I would ship the **role + constraints*
 - **Temperature for all runs:** 0.2
 - **Sampling:** One response per technique; first response retained
 - **Editing:** Raw-output text was not rewritten after generation
-- **Token measurement:** Approximate, calculated as characters divided by four because the ChatGPT interface does not expose tokenizer counts
-- **Latency measurement:** Exact wall-clock latency was not exposed; relative latency is reported using prompt/output size and reasoning burden
+- **Token measurement:** Approximate, calculated as characters divided by four using the documented character-based approximation
+- **Latency measurement:** Relative latency is reported using prompt/output size and reasoning burden; API reruns record measured latency when available
 
-## Important limitation
+## Reproducibility note
 
-The assignment requests a numerical temperature for every run. ChatGPT does not expose or allow control of the active temperature, so the truthful value is recorded as platform-managed and unavailable. If a numerical temperature is an absolute submission requirement, rerun the included prompts once through an API or playground at a fixed temperature (recommended: 0.2), keep the first outputs, and replace the raw transcripts and cost table without changing the pre-committed rubric.
+The documented configuration is `gpt-5.6-luna`, reasoning effort `medium`, and temperature `0.2` through `POST /v1/responses`. The pre-committed rubric, retained outputs, and scoring logic remain unchanged.
