@@ -1,4 +1,0 @@
-convert /home/runner/work/AcceleratorX/AcceleratorX/assignment-01/submission/assignment-01-complete.docx as a Writer document -> /home/runner/work/AcceleratorX/AcceleratorX/.tmp-pdf/assignment-01-complete.pdf using filter : writer_pdf_Export
-convert /home/runner/work/AcceleratorX/AcceleratorX/assignment-02/submission/assignment-02-complete.docx as a Writer document -> /home/runner/work/AcceleratorX/AcceleratorX/.tmp-pdf/assignment-02-complete.pdf using filter : writer_pdf_Export
-convert /home/runner/work/AcceleratorX/AcceleratorX/assignment-03/submission/assignment-03-complete.docx as a Writer document -> /home/runner/work/AcceleratorX/AcceleratorX/.tmp-pdf/assignment-03-complete.pdf using filter : writer_pdf_Export
-CONSISTENCY AUDIT PASSED
