@@ -24,7 +24,7 @@ Each assignment follows the same viewing order:
 
 Shared Luna configuration, the frozen source matrix, runner, and complete machine-readable run archive remain under [`verification/`](./verification/).
 
-The Luna evidence uses `gpt-5.6-luna` with medium reasoning. Explicit temperature was unsupported by the model; returned sampling metadata is preserved in each raw API record.
+The 46 retained API records use `gpt-5.6-luna` with medium reasoning. The API responses report **temperature 1.0** and **top_p 0.98** in returned sampling metadata. These were returned model defaults, not values explicitly supplied in the request.
 
 ## Repository maintenance
 
