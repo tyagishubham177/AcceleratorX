@@ -22,13 +22,7 @@ The controlled incident input remained fixed across all techniques.
 
 ## Scoring rubric
 
-Each output was scored from 1 to 5 on:
-
-- evidence fidelity and uncertainty control;
-- audience fit and tone; and
-- actionability and completeness.
-
-Maximum score: 15.
+Each output was scored from 1 to 5 on evidence fidelity, audience fit, and actionability. Maximum score: 15.
 
 ## Result
 
@@ -45,11 +39,11 @@ Use **role and constraints** for the defined checkout-incident task. It produced
 
 ## Boundary test
 
-A healthcare-safety variant exposed the limit of the winning technique. Its commerce-oriented action schema omitted an immediate clinical-safety escalation, while structured reasoning identified it. The conclusion is therefore task-specific, not universal.
+A healthcare-safety variant exposed the limit of the winning technique. Its commerce-oriented action schema omitted an immediate clinical-safety escalation, while structured reasoning identified it. The conclusion is task-specific, not universal.
 
 ## Reproducibility
 
-The active API configuration uses `gpt-5.6-luna`, medium reasoning, and **temperature 0.2**. Request configuration, hashes, timestamps, usage, and raw responses are preserved in the machine-readable records.
+Additive verification reran the primary role/structured comparison and the healthcare role/structured comparison three times each through the OpenAI API using `gpt-4.1-mini-2025-04-14` at **temperature 0.2**. Response IDs, timestamps, latency, token usage, prompt hashes, and unedited outputs are retained.
 
 See:
 
@@ -58,4 +52,4 @@ See:
 - [Editable submission DOCX](./submission/assignment-01-complete.docx)
 - [Official assignment brief](./assignment-brief.pdf)
 
-The submitted PDF remains the complete formatted submission record.
+The submitted PDF remains the original formatted submission record; the 0.2 API runs are additive verification.
