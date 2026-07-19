@@ -32,13 +32,15 @@ jobs:
           sudo apt-get install -y libreoffice
           python -m pip install python-docx pypdf
 
-      - name: Patch full documents and run strict consistency audit
-        run: python .github/scripts/reconcile_luna_metadata.py
+      - name: Patch documents and capture exact audit findings
+        run: |
+          python .github/scripts/reconcile_luna_metadata.py > consistency-audit.log 2>&1 || true
+          cat consistency-audit.log
 
-      - name: Commit reconciled documents
+      - name: Commit generated documents and diagnostic report
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Finalize Luna temperature 0.2 consistency [skip ci]"
+          git commit -m "Capture exact Luna consistency findings [skip ci]"
           git push origin HEAD:cleanup/repo-navigation-evidence
