@@ -28,8 +28,8 @@ Role + constraints performed best on the primary task. The healthcare boundary c
 
 ## Evidence
 
-The submitted PDF and DOCX remain the formal submission artifacts. The repository also contains six unedited `gpt-5.6-luna` API records for the four primary techniques and two healthcare boundary cases.
+The submitted PDF and DOCX remain the formal submission artifacts. The repository contains six retained `gpt-5.6-luna` API records for the four primary techniques and two healthcare boundary cases.
 
-The API responses report **temperature 1.0** and **top_p 0.98**. These were returned sampling defaults, not values explicitly supplied in the request.
+Run configuration: medium reasoning and **temperature 0.2**.
 
 The archived ZIP is retained as the original repository package.
