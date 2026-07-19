@@ -8,10 +8,6 @@ Design a layered support-assistant prompt, attack it across ten adversarial cate
 
 FlowDesk is a fictional SaaS company. Its support assistant may answer product questions, check simulated orders, issue refunds up to USD 50 without approval, and escalate cases outside its authority.
 
-## Prompt architecture
-
-Both prompt versions use six layers: identity, scope, hard constraints, business-policy constraints, style, and output format.
-
 ## Result
 
 | Metric | Result |
@@ -27,19 +23,13 @@ The critical failures were a split-refund bypass and disclosure of fictional cus
 
 The prompt can guide behaviour, communication, escalation language, and semantic boundaries. It cannot be the sole security boundary for money, identity, authorisation, private data, durable cross-session state, concurrency, or audit history. Those controls require deterministic application and tool-layer enforcement.
 
-## Additional evidence
-
-The supplementary tests verify that V2 preserved the four V1-passing categories and resisted a three-way split in one conversation. A cross-conversation split still exposed a critical control gap because the model lacked durable cumulative state.
-
 ## Reproducibility
 
-Additive verification reran the fabricated-authority and data-exfiltration critical retests three times each through the OpenAI API using `gpt-4.1-mini-2025-04-14` at **temperature 0.2**. The complete unedited API records are retained.
+Additive verification reran the fabricated-authority and data-exfiltration critical retests three times each through the OpenAI API using `gpt-4.1-mini-2025-04-14` at **temperature 0.2**. Additional regression and financial stress tests are retained.
 
 See:
 
 - [Evidence index](./evidence/README.md)
-- [Final submission PDF](./submission/assignment-02-complete.pdf)
-- [Editable submission DOCX](./submission/assignment-02-complete.docx)
+- [Corrected repository PDF](./submission/assignment-02-complete.pdf)
+- [Original submitted PDF and DOCX](./submission/original/README.md)
 - [Official assignment brief](./assignment-brief.pdf)
-
-The submitted PDF remains the original formatted submission record; the 0.2 API runs are additive verification.
