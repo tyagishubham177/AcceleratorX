@@ -1,9 +1,10 @@
 name: Reconcile Luna metadata
 
 on:
-  push:
+  pull_request:
     branches:
-      - cleanup/repo-navigation-evidence
+      - main
+    types: [opened, synchronize, reopened]
     paths:
       - .github/scripts/reconcile_luna_metadata.py
       - .github/workflows/reconcile-luna-metadata.yml
@@ -13,6 +14,7 @@ permissions:
 
 jobs:
   reconcile:
+    if: github.head_ref == 'cleanup/repo-navigation-evidence'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
