@@ -1,57 +1,32 @@
-# Reproducibility and verification status
+# Reproducibility and verification
 
-This folder tracks additive checks introduced after external review. Original prompts, raw outputs, score tables, and failure cases remain unchanged.
+This folder contains additive checks introduced after the original submissions. The submitted PDF and DOCX files remain the historical submission record.
 
-## Evidence added
+## Completed API verification
 
-- [Assignment 1 repeat-run verification appendix](../assignment-01/solution/appendix-repeat-runs.md)
-- [Assignment 2 regression and financial stress-test appendix](../assignment-02/solution/appendix-regression-and-stress-tests.md)
-- [Assignment 3 repeat-run and evidence-boundary appendix](../assignment-03/solution/appendix-repeat-runs-and-limitations.md)
-- [Delayed same-reviewer rescore log](../blind-rescore-log.md)
+The repository contains **36 genuine OpenAI API calls** using:
 
-## Completed in this pass
+- model: `gpt-4.1-mini-2025-04-14`
+- endpoint: `POST /v1/chat/completions`
+- temperature: **0.2**
 
-- Assignment 2: reran the four V1-passing categories against V2 as regression checks.
-- Assignment 2: added a three-way split-refund attack.
-- Assignment 2: added a cross-conversation split test, which exposed the expected statefulness gap and reinforced the need for deterministic enforcement.
-- Repository: added a delayed same-reviewer rescore on three judgment-heavy items.
-- Assignment 3: explicitly documented that V1–V3 do not meet the repeated-run standard proposed for V4.
+Every retained record includes the response ID, UTC timestamp, measured latency, prompt hash, token usage, finish status, unedited model output, and error field.
 
-## Not completed
+## Coverage
 
-Numerical-temperature API reruns were not executed because no API credential was available in the execution environment. No temperature, API response, latency, token count, or independent-run result has been invented.
+| Assignment | Verification cases | Calls |
+|---|---|---:|
+| Assignment 1 | Primary role vs structured reasoning; healthcare role vs structured reasoning | 12 |
+| Assignment 2 | Fabricated-authority and data-exfiltration critical retests | 6 |
+| Assignment 3 | Q1, Q5, and Q6 across V2 and V3 | 18 |
+| **Total** |  | **36** |
 
-## Required repeat-run matrix
+## Files
 
-| Assignment | Comparison | Calls per prompt/input | Target temperature |
-|---|---|---:|---:|
-| A1 | Primary role + constraints vs structured reasoning | 3 each | 0.2 |
-| A1 | Healthcare failure-case role + constraints vs structured reasoning | 3 each | 0.2 |
-| A2 | Fabricated-authority critical retest | 3 | 0.2 |
-| A2 | Data-exfiltration critical retest | 3 | 0.2 |
-| A3 | Q1 V2 vs V3 | 3 each | 0.2 |
-| A3 | Q5 V2 vs V3 | 3 each | 0.2 |
-| A3 | Q6 V2 vs V3 | 3 each | 0.2 |
+- [`api-runs/`](./api-runs/) contains the 36 unedited JSON records.
+- [`api-runs/manifest.json`](./api-runs/manifest.json) summarizes the run set.
+- [`run-api-reruns.mjs`](./run-api-reruns.mjs) is the credential-safe rerun script.
 
-## Recording standard
+## Evidence boundary
 
-Every API call should retain:
-
-- exact prompt and input
-- provider and model identifier
-- explicit temperature and other sampling parameters
-- UTC timestamp
-- raw output
-- rubric scores and reviewer
-- token usage and measured latency when exposed
-- prompt hash
-
-Do not replace original transcripts. Store repeat runs as clearly labelled additive evidence and report dissenting runs in full.
-
-## Interpretation
-
-- 3/3: limited result held.
-- 2/3: directional only; preserve and discuss the dissent.
-- 0–1/3: original claim is not stable enough to remain unqualified.
-
-A same-reviewer rescore is a consistency check, not an independent review. Production-grade validation still requires a second human reviewer or suitably validated deterministic graders.
+The 0.2 API runs are additive verification. They do not rewrite the original ChatGPT transcripts or claim that the original submitted outputs were generated through the API. Results should be interpreted using the relevant assignment rubric, with dissenting runs retained rather than hidden.
