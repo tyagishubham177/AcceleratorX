@@ -6,6 +6,7 @@
 ## Start here
 
 - [Final submission PDF](./submission/assignment-01-complete.pdf)
+- [Editable submission DOCX](./submission/assignment-01-complete.docx)
 - [Readable GitHub solution](./solution.md)
 - [Assignment brief](./assignment-brief.pdf)
 - [Luna evidence guide](./evidence/README.md)
