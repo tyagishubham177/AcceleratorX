@@ -431,7 +431,7 @@ The original role + constraints prompt was optimised for a commerce incident and
 
 # Cost and latency comparison
 
-Token counts are approximate. Exact wall-clock latency was unavailable in the ChatGPT interface.
+Token counts are approximate. Relative latency is based on prompt size, output size, and reasoning burden; API reruns record measured latency when available.
 
 | Technique | Prompt tokens (est.) | Output tokens (est.) | Total (est.) | Relative latency |
 |---|---:|---:|---:|---|
