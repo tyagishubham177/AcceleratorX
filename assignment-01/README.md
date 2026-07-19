@@ -28,8 +28,6 @@ Role + constraints performed best on the primary task. The healthcare boundary c
 
 ## Evidence
 
-The submitted PDF and DOCX remain the formal submission artifacts. The repository contains six retained `gpt-5.6-luna` API records for the four primary techniques and two healthcare boundary cases.
-
-Run configuration: medium reasoning and **temperature 0.2**.
+The submitted PDF and DOCX remain the original submission record. Additive verification reran the primary role/structured comparison and the healthcare role/structured comparison three times each through the OpenAI API using `gpt-4.1-mini` at **temperature 0.2**.
 
 The archived ZIP is retained as the original repository package.
