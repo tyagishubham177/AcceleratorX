@@ -5,11 +5,11 @@
 
 ## Start here
 
-- [Final submission PDF](./submission/assignment-01-complete.pdf)
+- [Corrected repository PDF](./submission/assignment-01-complete.pdf)
 - [Readable GitHub solution](./solution.md)
 - [Assignment brief](./assignment-brief.pdf)
-- [Editable DOCX](./submission/assignment-01-complete.docx)
 - [API evidence guide](./evidence/README.md)
+- [Original submitted PDF and DOCX](./submission/original/README.md)
 
 ## What was tested
 
@@ -26,8 +26,8 @@ The same checkout-incident task was run using zero-shot, few-shot, structured re
 
 Role + constraints performed best on the primary task. The healthcare boundary case showed that structured reasoning can outperform it when a fixed action schema omits a safety-critical escalation.
 
-## Evidence
+## Evidence boundary
 
-The submitted PDF and DOCX remain the original submission record. Additive verification reran the primary role/structured comparison and the healthcare role/structured comparison three times each through the OpenAI API using `gpt-4.1-mini` at **temperature 0.2**.
+The corrected repository PDF states the verified numerical-temperature configuration. Additive verification reran the primary and healthcare role/structured comparisons three times each through the OpenAI API using `gpt-4.1-mini-2025-04-14` at **temperature 0.2**.
 
-The archived ZIP is retained as the original repository package.
+The original submitted PDF and DOCX are preserved separately as historical ChatGPT-era artefacts. The archived ZIP remains the original repository package.
