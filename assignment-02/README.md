@@ -28,6 +28,8 @@ The main conclusion is architectural: prompts can guide behaviour, but refund to
 
 ## Evidence
 
-The submitted PDF and DOCX remain the formal submission artifacts. The evidence area contains the corresponding unedited `gpt-5.6-luna` API records plus additional regression and financial stress testing. The API rejected an explicit temperature parameter; returned sampling metadata is retained in each record.
+The submitted PDF and DOCX remain the formal submission artifacts. The evidence area contains the corresponding unedited `gpt-5.6-luna` API records plus additional regression and financial stress testing.
+
+The API responses report **temperature 1.0** and **top_p 0.98**. These were returned sampling defaults, not values explicitly supplied in the request.
 
 All test data and tools are fictional or simulated. The archived ZIP is retained as the original repository package.
