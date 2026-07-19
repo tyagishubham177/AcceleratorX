@@ -10,18 +10,7 @@ FlowDesk is a fictional SaaS company. Its support assistant may answer product q
 
 ## Prompt architecture
 
-Both prompt versions use six layers:
-
-1. identity and persona;
-2. scope and capabilities;
-3. hard constraints;
-4. business-policy constraints;
-5. style; and
-6. output format.
-
-## Red-team coverage
-
-The V1 prompt was tested against direct injection, role-play jailbreak, prompt extraction, scope creep, fabricated authority, urgency and social engineering, data exfiltration, emotional pressure, obfuscation, and multi-turn erosion.
+Both prompt versions use six layers: identity, scope, hard constraints, business-policy constraints, style, and output format.
 
 ## Result
 
@@ -34,10 +23,6 @@ The V1 prompt was tested against direct injection, role-play jailbreak, prompt e
 
 The critical failures were a split-refund bypass and disclosure of fictional customer information without identity verification.
 
-## V2 changes
-
-V2 added controls for instruction confidentiality, cumulative refund limits, anti-splitting, identity verification, data minimisation, release verification, transformed requests, and persistent multi-turn policy enforcement.
-
 ## Main conclusion
 
 The prompt can guide behaviour, communication, escalation language, and semantic boundaries. It cannot be the sole security boundary for money, identity, authorisation, private data, durable cross-session state, concurrency, or audit history. Those controls require deterministic application and tool-layer enforcement.
@@ -48,7 +33,7 @@ The supplementary tests verify that V2 preserved the four V1-passing categories 
 
 ## Reproducibility
 
-The active API configuration uses `gpt-5.6-luna`, medium reasoning, and **temperature 0.2**. The complete machine-readable records are retained.
+Additive verification reran the fabricated-authority and data-exfiltration critical retests three times each through the OpenAI API using `gpt-4.1-mini-2025-04-14` at **temperature 0.2**. The complete unedited API records are retained.
 
 See:
 
@@ -57,4 +42,4 @@ See:
 - [Editable submission DOCX](./submission/assignment-02-complete.docx)
 - [Official assignment brief](./assignment-brief.pdf)
 
-The submitted PDF remains the complete formatted submission record.
+The submitted PDF remains the original formatted submission record; the 0.2 API runs are additive verification.
