@@ -12,26 +12,20 @@
 - [Evaluation tracker XLSX](./submission/assignment-03-evaluation-tracker.xlsx)
 - [Policy one-pager PDF](./submission/assignment-03-policy-one-pager.pdf)
 - [Tracking dashboard PNG](./submission/assignment-03-tracking-dashboard.png)
-- [Evidence guide](./evidence/README.md)
-
-## What was tested
-
-A fictional Northstar Labs onboarding assistant was evaluated across three prompt versions using a frozen policy, fixed rubric, and eight-question test set.
+- [API evidence guide](./evidence/README.md)
 
 ## Result
 
-| Version | Score | Percentage | Questions passed | Critical failures |
-|---|---:|---:|---:|---:|
-| V1 | 69/96 | 71.9% | 2/8 | 2 |
-| V2 | 93/96 | 96.9% | 8/8 | 0 |
-| V3 | **95/96** | **99.0%** | **8/8** | **0** |
+| Version | Score | Questions passed | Critical failures |
+|---|---:|---:|---:|
+| V1 | 69/96 | 2/8 | 2 |
+| V2 | 93/96 | 8/8 | 0 |
+| V3 | **95/96** | **8/8** | **0** |
 
-V3 preserved the factual controls introduced in V2 while removing the unnecessary mandatory response template. It was the best tested version, though a larger release-gate evaluation would still be required for production use.
+V3 retained V2's factual controls while replacing its mandatory template with adaptive presentation. It is the best tested version, but not automatically production-ready.
 
 ## Evidence
 
-The submitted PDF, DOCX, workbook, policy files, and dashboard remain the formal assignment artifacts. The repository contains 24 retained `gpt-5.6-luna` API records covering all eight questions across V1, V2, and V3.
-
-Run configuration: medium reasoning and **temperature 0.2**.
+The submitted files remain the original assignment record. Additive verification reran Q1, Q5, and Q6 for V2 and V3 three times each through the OpenAI API using `gpt-4.1-mini` at **temperature 0.2**.
 
 The archived ZIP is retained as the original repository package.
