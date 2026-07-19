@@ -3,25 +3,17 @@
 **Topic:** Prompt Engineering Foundations  
 **Status:** Completed
 
-## Overview
+## Start here
 
-This assignment tests whether a simpler and cheaper prompting technique can outperform a more elaborate one for a real business task. The comparison is controlled: the underlying task input remains fixed, the scoring rubric is defined before any runs, and all raw outputs are retained without editing.
+- [Final submission PDF](./submission/assignment-01-complete.pdf)
+- [Readable GitHub solution](./solution.md)
+- [Assignment brief](./assignment-brief.pdf)
+- [Editable DOCX](./submission/assignment-01-complete.docx)
+- [API evidence guide](./evidence/README.md)
 
-## Business task selected
+## What was tested
 
-Convert a technical checkout-service incident into:
-
-1. a concise external stakeholder update; and
-2. a prioritised internal engineering action recommendation.
-
-The scenario reflects a common software-delivery problem: converting technical evidence into useful communication for customers, Support, Operations, and engineering teams.
-
-## Techniques compared
-
-1. Zero-shot
-2. Few-shot with original examples
-3. Structured reasoning
-4. Role + constraints
+The same checkout-incident task was run using zero-shot, few-shot, structured reasoning, and role + constraints prompting.
 
 ## Result
 
@@ -32,31 +24,10 @@ The scenario reflects a common software-delivery problem: converting technical e
 | 3 | Zero-shot | **13/15** |
 | 4 | Few-shot | **12/15** |
 
-The recommended production approach is **role + constraints**. It provided the strongest audience separation, factual discipline, and actionability without the example overhead of few-shot prompting or the longer output associated with structured reasoning.
+Role + constraints performed best on the primary task. The healthcare boundary case showed that structured reasoning can outperform it when a fixed action schema omits a safety-critical escalation.
 
-A separate healthcare-safety failure case showed that this technique is not universally superior. Its commerce-specific action schema omitted a necessary clinical-safety escalation, allowing structured reasoning to outperform it.
+## Evidence
 
-## Files
+The submitted PDF and DOCX remain the formal submission artifacts. The repository also contains six unedited `gpt-5.6-luna` API records for the four primary techniques and two healthcare boundary cases. The API rejected an explicit temperature parameter; returned sampling metadata is retained in each record.
 
-- [Assignment brief](./assignment-brief.pdf)
-- [Complete Markdown solution](./solution/complete-submission.md)
-- [Submission PDF](./submission/assignment-01-complete.pdf)
-- [Submission DOCX](./submission/assignment-01-complete.docx)
-- [Original repository package](./archive/assignment-01-repo-files.zip)
-
-## Submission contents
-
-The complete solution includes:
-
-- the rubric written before the runs
-- four prompts and four unedited outputs
-- a filled score table
-- scoring rationale
-- a genuine failure-case transcript and diagnosis
-- token and latency comparison
-- the final ship decision
-- model/version and parameter disclosure
-
-## Reproducibility note
-
-The complete assignment solution and its original submission artifacts remain the source record. Separate Luna API evidence is additive and does not overwrite those transcripts; see [verification/luna-runs](../verification/luna-runs/).
+The archived ZIP is retained as the original repository package.
