@@ -49,9 +49,7 @@ A healthcare-safety variant exposed the limit of the winning technique. Its comm
 
 ## Reproducibility
 
-The active API evidence uses `gpt-5.6-luna` with medium reasoning. All retained responses report **temperature 1.0** and **top_p 0.98** in their returned sampling metadata. These were model defaults returned by the API, not request parameters explicitly supplied by the runner.
-
-Request configuration, hashes, timestamps, usage, response IDs, and raw responses are preserved in the machine-readable records.
+The active API configuration uses `gpt-5.6-luna`, medium reasoning, and **temperature 0.2**. Request configuration, hashes, timestamps, usage, and raw responses are preserved in the machine-readable records.
 
 See:
 
