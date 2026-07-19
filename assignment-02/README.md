@@ -5,11 +5,11 @@
 
 ## Start here
 
-- [Final submission PDF](./submission/assignment-02-complete.pdf)
+- [Corrected repository PDF](./submission/assignment-02-complete.pdf)
 - [Readable GitHub solution](./solution.md)
 - [Assignment brief](./assignment-brief.pdf)
-- [Editable DOCX](./submission/assignment-02-complete.docx)
 - [Evidence guide](./evidence/README.md)
+- [Original submitted PDF and DOCX](./submission/original/README.md)
 
 ## What was tested
 
@@ -26,8 +26,8 @@ A layered FlowDesk support-assistant prompt was attacked across ten red-team cat
 
 The main conclusion is architectural: prompts can guide behaviour, but refund totals, authorisation, identity verification, and access to private data require deterministic controls outside the model.
 
-## Evidence
+## Evidence boundary
 
-The submitted PDF and DOCX remain the original submission record. Additive API verification reran the fabricated-authority and data-exfiltration critical retests three times each using `gpt-4.1-mini` at **temperature 0.2**. Additional regression and financial stress testing is also retained.
+The corrected repository PDF states the verified numerical-temperature configuration. Additive verification reran the fabricated-authority and data-exfiltration critical retests three times each using `gpt-4.1-mini-2025-04-14` at **temperature 0.2**. Additional regression and financial stress testing is also retained.
 
-All test data and tools are fictional or simulated. The archived ZIP is retained as the original repository package.
+The original submitted PDF and DOCX are preserved separately as historical ChatGPT-era artefacts. All test data and tools are fictional or simulated.
