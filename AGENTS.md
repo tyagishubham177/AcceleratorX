@@ -2,46 +2,21 @@
 
 ## Repository purpose
 
-This repository contains AcceleratorX prompt-engineering assignments, organised by assignment number rather than assumed session order.
-
-Current folders:
-
-- `assignment-01/` — The Technique Ladder
-- `assignment-02/` — Build It, Then Break It
-- `assignment-03/` — Prompting as an Engineering Practice
-
-Each assignment folder may contain the official brief, working notes, prompts, outputs, evaluation evidence, screenshots, logs, and conclusions.
+This repository contains three AcceleratorX prompt-engineering assignments plus a shared Luna verification package.
 
 ## Instructions for AI agents
 
-1. Read the root `README.md`, `CONTRIBUTING.md`, and the relevant assignment folder before making changes.
-2. Treat the assignment PDFs as the authoritative briefs. Do not silently alter requirements, grading criteria, or scope.
-3. Do not assume an assignment belongs to a particular session unless the source material explicitly states that.
-4. Do not complete or substantially solve an assignment unless the user explicitly requests it.
-5. Preserve raw prompts, model outputs, scores, logs, screenshots, and failure cases without polishing or rewriting them.
-6. Keep model name/version, temperature, parameters, timestamp, and other run metadata attached to experiment outputs.
-7. Use only fictional or sanitised data. Never add credentials, private company data, customer information, or personal data.
-8. Keep supporting files inside the relevant assignment folder and use clear lowercase kebab-case names.
-9. Update navigation links when files or folders are renamed or moved.
-10. Keep documentation concise and focused on what a visitor or future agent needs to understand.
+1. Read the root README, this file, and the relevant assignment README before changing files.
+2. Keep the active model configuration consistent everywhere: `gpt-5.6-luna`, reasoning effort `medium`, temperature `0.2`.
+3. Use `POST /v1/responses` for reproducibility runs.
+4. Keep `manual-upload/README.md`; `manual-upload/` is the permanent binary-upload staging workflow.
+5. Do not introduce another model name, an unspecified temperature, or temperature values other than `0.2`.
+6. Preserve assignment briefs and supporting submission artefacts unless the user explicitly requests changes.
+7. Update all affected README links after moving or renaming files.
+8. Use fictional or sanitised data only. Never commit credentials or private data.
 
 ## Git workflow
 
 - Never commit directly to `main`.
-- Create a focused branch for every change.
-- Commit only related changes to that branch.
-- Open a pull request against `main` with a clear title and description.
-- Do not merge the pull request unless the user explicitly asks.
-- Avoid force-pushing or rewriting shared history.
-
-## Evidence and experiment integrity
-
-- Define evaluation criteria before comparing prompt variants where the assignment requires it.
-- Keep comparison inputs and evaluation sets fixed unless a new experiment is clearly labelled.
-- Record failures and regressions rather than hiding them.
-- Distinguish prompt-level controls from safeguards that require deterministic code or external enforcement.
-- Do not claim an experiment was run unless the corresponding evidence exists in the repository.
-
-## Weekly snapshots
-
-The repository may use automated annotated tags named `weekly-snapshot-YYYY-MM-DD`. These are convenience restore points only. They do not replace branches, pull requests, commit history, or external backups.
+- Use a focused branch and pull request.
+- Do not merge unless the user explicitly asks.

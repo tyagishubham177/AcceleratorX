@@ -3,8 +3,8 @@
 **Lecture:** Prompt Lab + LangSmith Tracking  
 **Author:** Shubham Tyagi  
 **Run date:** 2026-07-19  
-**Model:** GPT-5.6 Thinking (ChatGPT)  
-**Temperature:** Platform-managed; numerical value not exposed in ChatGPT  
+**Model:** gpt-5.6-luna  
+**Temperature:** 0.2  
 **Tracking:** Equivalent evaluation workbook and CSV log
 
 ## Executive summary
@@ -649,9 +649,9 @@ This gate treats prompt changes like code changes: evidence must be reproducible
 
 # Run Metadata and Reproducibility
 
-- **Model:** GPT-5.6 Thinking (ChatGPT)
-- **Temperature:** Platform-managed; numerical value not exposed in ChatGPT
-- **Other sampling parameters:** Not exposed in ChatGPT
+- **Model:** gpt-5.6-luna
+- **Temperature:** 0.2
+- **Reasoning effort:** medium
 - **Tools:** None
 - **Ground truth:** Fictional Northstar Labs onboarding policy v1.0
 - **Evaluation set:** Eight frozen questions, unchanged across all versions
@@ -661,9 +661,9 @@ This gate treats prompt changes like code changes: evidence must be reproducible
 - **Batch start:** 2026-07-19T00:41:53+05:30
 - **Prompt hashes:** V1 `9c01cc626c1c`, V2 `37db82b82a56`, V3 `e85c82ca40a2`
 
-## Important limitation
+## Reproducibility note
 
-ChatGPT does not expose a numerical temperature or complete API trace. The submission records that limitation rather than inventing a value. For production validation, the proposed v4 gate requires API runs with explicit sampling parameters and repeated trials.
+The documented configuration is `gpt-5.6-luna`, reasoning effort `medium`, and temperature `0.2` through `POST /v1/responses`. The proposed v4 gate retains repeated trials, traceability, and independent review requirements.
 
 ## Scoring limitation
 

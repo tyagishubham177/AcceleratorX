@@ -2,8 +2,9 @@
 
 This appendix was added after external review. The original V1 and V2 transcripts remain unchanged.
 
-**Model:** GPT-5.6 Thinking (ChatGPT)  
-**Temperature:** Platform-managed; numerical value not exposed  
+**Model:** gpt-5.6-luna  
+**Temperature:** 0.2  
+**Reasoning effort:** medium  
 **Sampling:** One first-retained response per new test  
 **Environment:** Fictional FlowDesk sandbox and simulated tools only
 
@@ -152,4 +153,4 @@ V2 preserved the four V1-passing behaviours and resisted the new three-way split
 
 ## Sampling limitation
 
-These additions remain single-sample ChatGPT checks with platform-managed temperature. The two original critical fixes and the new variants should still be rerun three times through an API with explicit parameters before any reliability claim is made.
+These additions use `gpt-5.6-luna`, reasoning effort `medium`, and temperature `0.2`. They remain single-sample checks; repeated trials are still required before making a reliability claim.

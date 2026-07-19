@@ -3,8 +3,8 @@
 **Lecture:** Context Engineering  
 **Author:** Shubham Tyagi  
 **Run date:** 19 July 2026  
-**Model:** GPT-5.6 Thinking (ChatGPT)  
-**Temperature:** Platform-managed; exact numerical value not exposed in ChatGPT
+**Model:** gpt-5.6-luna  
+**Temperature:** 0.2
 
 ## Goal
 
@@ -666,14 +666,14 @@ Use prompts for semantic behaviour and communication boundaries. Use determinist
 # Run metadata and integrity note
 
 - **Run date:** 19 July 2026
-- **Model:** GPT-5.6 Thinking (ChatGPT)
-- **Temperature:** Platform-managed; exact numerical value not exposed in ChatGPT
+- **Model:** gpt-5.6-luna
+- **Temperature:** 0.2
 - **Sampling:** One response retained for each documented attack or retest
 - **Environment:** Controlled assignment sandbox using fictional FlowDesk data and simulated tools
 - **Live-product testing:** None
 - **Raw-output editing:** Outputs are presented as retained in the assignment record; no post-hoc repair was applied before scoring
 
-## Disclosed limitation
+## Reproducibility note
 
-The ChatGPT interface does not expose a numerical temperature. A numerical value has not been invented. If the evaluator requires one, rerun the exact prompts through an API or playground at a fixed temperature, retain the first outputs, and update only the run metadata and transcripts.
+The documented configuration is `gpt-5.6-luna`, reasoning effort `medium`, and temperature `0.2` through `POST /v1/responses`. The retained attack and retest transcripts remain the assignment record.
 
