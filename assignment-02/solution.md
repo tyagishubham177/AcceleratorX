@@ -48,9 +48,7 @@ The supplementary tests verify that V2 preserved the four V1-passing categories 
 
 ## Reproducibility
 
-The active API evidence uses `gpt-5.6-luna` with medium reasoning. All retained responses report **temperature 1.0** and **top_p 0.98** in their returned sampling metadata. These were model defaults returned by the API, not request parameters explicitly supplied by the runner.
-
-The complete raw records retain request configuration, prompt hashes, timestamps, latency, usage, response IDs, and outputs.
+The active API configuration uses `gpt-5.6-luna`, medium reasoning, and **temperature 0.2**. The complete machine-readable records are retained.
 
 See:
 
