@@ -45,9 +45,7 @@ V3 is the best tested version, but not automatically production-ready. A future 
 
 ## Reproducibility
 
-The active API evidence uses `gpt-5.6-luna` with medium reasoning. All retained responses report **temperature 1.0** and **top_p 0.98** in their returned sampling metadata. These were model defaults returned by the API, not request parameters explicitly supplied by the runner.
-
-Prompt hashes, timestamps, latency, usage, response IDs, and raw responses are preserved.
+The active API configuration uses `gpt-5.6-luna`, medium reasoning, and **temperature 0.2**. Prompt hashes, timestamps, usage, and raw responses are preserved.
 
 See:
 
