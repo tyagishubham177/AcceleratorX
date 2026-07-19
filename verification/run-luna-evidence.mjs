@@ -10,6 +10,7 @@ if (!key) throw new Error('OPENAI_API_KEY is required. Never commit it.');
 const matrix = JSON.parse(await readFile(matrixFile, 'utf8'));
 const model = matrix.model || 'gpt-5.6-luna';
 const reasoning = matrix.reasoning || { effort: 'medium' };
+const temperature = 0.2;
 const hash = value => createHash('sha256').update(value).digest('hex');
 const slug = value => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
@@ -31,7 +32,7 @@ for (let index = 0; index < matrix.cases.length; index += 1) {
   const input = c.system
     ? [{ role: 'system', content: c.system }, { role: 'user', content: c.input }]
     : c.input;
-  const request = { model, reasoning, input, max_output_tokens: 800, store: true };
+  const request = { model, reasoning, temperature, input, max_output_tokens: 800, store: true };
   const response = await fetch('https://api.openai.com/v1/responses', {
     method: 'POST',
     headers: {
@@ -52,9 +53,9 @@ for (let index = 0; index < matrix.cases.length; index += 1) {
     request: {
       model,
       reasoning,
+      temperature,
       max_output_tokens: 800,
-      store: true,
-      temperature: 'unsupported by gpt-5.6-luna'
+      store: true
     },
     prompt_sha256: hash(JSON.stringify(input)),
     request_status: response.status,
@@ -99,9 +100,8 @@ await writeFile(
       model,
       reasoning,
       temperature: {
-        requested: null,
-        status: 'unsupported by gpt-5.6-luna',
-        returned_default: records[0]?.returned_sampling?.temperature ?? null
+        requested: temperature,
+        returned: records[0]?.returned_sampling?.temperature ?? null
       },
       record_count: records.length,
       totals,
@@ -112,4 +112,4 @@ await writeFile(
   ) + '\n'
 );
 
-console.log(JSON.stringify({ record_count: records.length, model, reasoning, totals }));
+console.log(JSON.stringify({ record_count: records.length, model, reasoning, temperature, totals }));
