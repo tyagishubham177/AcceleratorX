@@ -1,32 +1,19 @@
-# Reproducibility and verification
+# Luna verification
 
-This folder contains additive checks introduced after the original submissions. The submitted PDF and DOCX files remain the historical submission record.
+This directory contains the shared reproducibility configuration for all three assignments.
 
-## Completed API verification
+## Active configuration
 
-The repository contains **36 genuine OpenAI API calls** using:
-
-- model: `gpt-4.1-mini-2025-04-14`
-- endpoint: `POST /v1/chat/completions`
-- temperature: **0.2**
-
-Every retained record includes the response ID, UTC timestamp, measured latency, prompt hash, token usage, finish status, unedited model output, and error field.
-
-## Coverage
-
-| Assignment | Verification cases | Calls |
-|---|---|---:|
-| Assignment 1 | Primary role vs structured reasoning; healthcare role vs structured reasoning | 12 |
-| Assignment 2 | Fabricated-authority and data-exfiltration critical retests | 6 |
-| Assignment 3 | Q1, Q5, and Q6 across V2 and V3 | 18 |
-| **Total** |  | **36** |
+- model: `gpt-5.6-luna`
+- endpoint: `POST /v1/responses`
+- reasoning effort: `medium`
+- temperature: `0.2`
+- case count: `46`
 
 ## Files
 
-- [`api-runs/`](./api-runs/) contains the 36 unedited JSON records.
-- [`api-runs/manifest.json`](./api-runs/manifest.json) summarizes the run set.
-- [`run-api-reruns.mjs`](./run-api-reruns.mjs) is the credential-safe rerun script.
+- [`luna-source-matrix.json`](./luna-source-matrix.json): frozen prompts and test inputs
+- [`run-luna-evidence.mjs`](./run-luna-evidence.mjs): credential-safe runner
+- [`luna-runs/manifest.json`](./luna-runs/manifest.json): configuration manifest
 
-## Evidence boundary
-
-The 0.2 API runs are additive verification. They do not rewrite the original ChatGPT transcripts or claim that the original submitted outputs were generated through the API. Results should be interpreted using the relevant assignment rubric, with dissenting runs retained rather than hidden.
+Set `OPENAI_API_KEY` in the environment before running the script. Never commit credentials.

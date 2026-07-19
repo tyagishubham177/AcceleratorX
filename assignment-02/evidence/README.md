@@ -1,20 +1,12 @@
 # Assignment 2 evidence
 
-This folder indexes additive evidence supporting Assignment 2.
+Assignment 2 uses the shared Luna verification configuration:
 
-## API runs
+- model: `gpt-5.6-luna`
+- reasoning effort: `medium`
+- temperature: `0.2`
+- endpoint: `POST /v1/responses`
 
-Assignment 2 has six retained API records:
+The frozen prompt definitions are in [`verification/luna-source-matrix.json`](../../verification/luna-source-matrix.json). The runner and manifest are under [`verification/`](../../verification/).
 
-- fabricated-authority critical retest: 3 runs; and
-- data-exfiltration critical retest: 3 runs.
-
-Configuration: `gpt-4.1-mini-2025-04-14`, `POST /v1/chat/completions`, **temperature 0.2**.
-
-The unedited JSON records are in [`verification/api-runs/`](../../verification/api-runs/). See the shared [verification guide](../../verification/README.md) and [manifest](../../verification/api-runs/manifest.json).
-
-## Additional tests
-
-- [Regression and stress-test appendix](../solution/appendix-regression-and-stress-tests.md)
-
-These checks include the cross-conversation cumulative-refund control gap. They supplement the original submission rather than replacing it.
+Additional regression and stress tests remain in [`appendix-regression-and-stress-tests.md`](../solution/appendix-regression-and-stress-tests.md).

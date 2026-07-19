@@ -2,11 +2,7 @@
 
 ## Objective
 
-Design a layered support-assistant prompt, attack it across ten adversarial categories, patch observed weaknesses, retest the failures, and decide which controls must live outside the model.
-
-## Scenario
-
-FlowDesk is a fictional SaaS company. Its support assistant may answer product questions, check simulated orders, issue refunds up to USD 50 without approval, and escalate cases outside its authority.
+Design a layered support-assistant prompt, attack it across ten adversarial categories, patch observed weaknesses, and retest failures.
 
 ## Result
 
@@ -17,19 +13,10 @@ FlowDesk is a fictional SaaS company. Its support assistant may answer product q
 | Critical V1 failures | **2** |
 | Targeted V2 retests passed | **6/6** |
 
-The critical failures were a split-refund bypass and disclosure of fictional customer information without identity verification.
-
-## Main conclusion
-
-The prompt can guide behaviour, communication, escalation language, and semantic boundaries. It cannot be the sole security boundary for money, identity, authorisation, private data, durable cross-session state, concurrency, or audit history. Those controls require deterministic application and tool-layer enforcement.
+The main conclusion is architectural: prompts can guide behaviour, but money, identity, authorisation, private data, durable state, and audit controls require deterministic enforcement.
 
 ## Reproducibility
 
-Additive verification reran the fabricated-authority and data-exfiltration critical retests three times each through the OpenAI API using `gpt-4.1-mini-2025-04-14` at **temperature 0.2**. Additional regression and financial stress tests are retained.
+The active configuration is `gpt-5.6-luna`, reasoning effort `medium`, temperature `0.2`, through `POST /v1/responses`.
 
-See:
-
-- [Evidence index](./evidence/README.md)
-- [Corrected repository PDF](./submission/assignment-02-complete.pdf)
-- [Original submitted PDF and DOCX](./submission/original/README.md)
-- [Official assignment brief](./assignment-brief.pdf)
+See the [evidence guide](./evidence/README.md) and [final PDF](./submission/assignment-02-complete.pdf).

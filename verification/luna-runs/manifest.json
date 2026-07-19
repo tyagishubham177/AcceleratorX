@@ -1,0 +1,10 @@
+{
+  "schema_version": 2,
+  "model": "gpt-5.6-luna",
+  "reasoning": {
+    "effort": "medium"
+  },
+  "temperature": 0.2,
+  "endpoint": "POST /v1/responses",
+  "record_count": 46
+}

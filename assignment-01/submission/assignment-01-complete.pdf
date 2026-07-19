@@ -1,8 +1,8 @@
-%PDF-1.3
+%PDF-1.4
 %“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
 <<
-/F1 2 0 R /F2 3 0 R /F3 4 0 R
+/F1 2 0 R /F2 3 0 R
 >>
 endobj
 2 0 obj
@@ -17,64 +17,4 @@ endobj
 endobj
 4 0 obj
 <<
-/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
->>
-endobj
-5 0 obj
-<<
-/Contents 9 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 8 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
-
->> 
-  /Type /Page
->>
-endobj
-6 0 obj
-<<
-/PageMode /UseNone /Pages 8 0 R /Type /Catalog
->>
-endobj
-7 0 obj
-<<
-/Author (anonymous) /CreationDate (D:20260719082031+00'00') /Creator (anonymous) /Keywords () /ModDate (D:20260719082031+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (unspecified) /Title (untitled) /Trapped /False
->>
-endobj
-8 0 obj
-<<
-/Count 1 /Kids [ 5 0 R ] /Type /Pages
->>
-endobj
-9 0 obj
-<<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 1039
->>
-stream
-Gat=)?#SIW&:ErMfZ/HVZq+&$ku6>X%p/DkJl_(s,HW13,YB@3Vs1D"-1/3Wlo'B&5QFB$FuVQFifMNJa(I1.]WGW@Sc]d*Dh1P.U&G=eqH;Si+QC,VQi$[\_97LgU+E"Z"j;-j5WupS\jNF$l&>U&,CEI-MtR>(s$?U(J]hW+Qa?6&DU+,3&8oWnR[/6;]scrTH.\KgD%Ng-\+"j:9rkoJNI+nR"eNX>iY5aq3>4e#nu?)sTL&\Zh.SAu*a>j.NDBAuh?12I^n9T3,C7MXi"l\Mo:0]cB:MtIR77$,`-JDQ8/I#c`W#-W/H7:Q0-q:"p_iaJnghiWC=#GR6mAp:,$/#U8iRQEMnRtcY5\Qa_h;(dg#Ai=(Pq.<;iiJ<,j0PoUm4q+j#dncA[Bi;RKh^tG2M.`JLAX#<g,7;&+;R@s1GMNbr:8u/uZJ64ZZCT@C#+Dm\n8"?aP`Xedhar#'Hgc)=!GaRBe<u42*^9k?sX))<5"5VAcX^#\G.!!KHAG$WS@K]N[EaR24M=kaKn_'74kSrDQtlMA:EJ[kU`-kCu#f-+m6t2-*L@8@_iCSGb9ka3OJ@9G!^pPl'm'JtLE7]g(P;?d@O>(dV_r9($]=*oRhj1sA?i#PE>Mk1OOCp"T\X_ItDXRP=VD`j>,Ia-Gs]/"Xb?/`%N!K%?8p:f`b@1>DQtmD3Hm%dpW\b!NBh8U6!dI-s%h+_\?[*G@OEk"_Cji/^a89g%W9otG3nS"89-^PAAc=r@i0fVmJ3Gj>[VaK/k1@4\na)qAcEJc&)LjdHYa"ll8(YdB"ZVec[R4d8<(MeL\"eJ/g_Z7M%sZ^cQh"AUG4-[C%5;Wo:2bEAXO$hK&!>,_2jQkYoY8SX'63t*d8SV-&?8Q.e!9VQ8_QlYk]$%Z%G:VmYAq*dc*o#lOeMFWPq47"CIAeUnl8:C:2mls3n,,X0DQpjfg5ptAK`M"]JI$i?Y_J;$n'j](d:E#Te)71_FJ(q^,[Eknkq#C+k4s[J3D#JPM;chSC2K/TiHc(S];%fK!%mmU&_u~>endstream
-endobj
-xref
-0 10
-0000000000 65535 f 
-0000000061 00000 n 
-0000000112 00000 n 
-0000000219 00000 n 
-0000000331 00000 n 
-000000446 00000 n 
-0000000649 00000 n 
-0000000717 00000 n 
-0000000978 00000 n 
-0000001037 00000 n 
-trailer
-<<
-/ID 
-[<0157b124dee3dcb3826d736e2628f64b><0157b124dee3dcb3826d736e2628f64b>]
-% ReportLab generated PDF document -- digest (opensource)
-
-/Info 7 0 R
-/Root 6 0 R
-/Size 10
->>
-startxref
-2167
-%%EOF
+/Contents 8 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 7 0 R /Resources
