@@ -25,27 +25,13 @@ A fictional Northstar Labs Employee Onboarding Assistant answers questions about
 | V2 | 93/96 | 96.9% | 8/8 | 0 |
 | V3 | **95/96** | **99.0%** | **8/8** | **0** |
 
-## Version findings
-
-### V1: Helpful but unsafe
-
-V1 made plausible but unsupported assumptions, disclosed internal instructions, and fabricated policy coverage.
-
-### V2: Safe but mechanical
-
-V2 added strict source-grounding, instruction secrecy, authority resistance, absent-information handling, and anti-fabrication controls. It passed all questions but introduced a communication regression through a mandatory three-section template.
-
-### V3: Controlled and adaptive
-
-V3 retained V2's factual controls while allowing compact answers for straightforward questions and additional structure only for conditional, adversarial, or unanswered questions.
-
 ## Decision
 
-V3 is the best tested version, but not automatically production-ready. A future release gate should require a larger frozen test set, repeated runs, zero critical failures, category-specific pass thresholds, regression checks, complete traceability, and second-reviewer verification.
+V3 retained V2's factual controls while replacing its mandatory template with adaptive presentation. It is the best tested version, but not automatically production-ready.
 
 ## Reproducibility
 
-The active API configuration uses `gpt-5.6-luna`, medium reasoning, and **temperature 0.2**. Prompt hashes, timestamps, usage, and raw responses are preserved.
+Additive verification reran Q1, Q5, and Q6 for V2 and V3 three times each through the OpenAI API using `gpt-4.1-mini-2025-04-14` at **temperature 0.2**. Response IDs, timestamps, latency, token usage, prompt hashes, and unedited outputs are retained.
 
 See:
 
@@ -55,4 +41,4 @@ See:
 - [Policy one-pager PDF](./submission/assignment-03-policy-one-pager.pdf)
 - [Official assignment brief](./assignment-brief.pdf)
 
-The submitted PDF remains the complete formatted submission record.
+The submitted PDF remains the original formatted submission record; the 0.2 API runs are additive verification.
