@@ -3,46 +3,17 @@
 **Topic:** Context Engineering  
 **Status:** Completed
 
-## Overview
+## Start here
 
-This assignment treats a system prompt as part of a production control system. The task is to design a layered assistant prompt, attack it systematically, log every failure, patch only the observed weaknesses, and decide which controls should live outside the model.
+- [Final submission PDF](./submission/assignment-02-complete.pdf)
+- [Readable GitHub solution](./solution.md)
+- [Assignment brief](./assignment-brief.pdf)
+- [Editable DOCX](./submission/assignment-02-complete.docx)
+- [Evidence guide](./evidence/README.md)
 
-## Scenario selected
+## What was tested
 
-A fictional mid-size SaaS company called **FlowDesk** uses a support assistant that can:
-
-- answer product and policy questions
-- check order status through a simulated tool
-- issue refunds up to USD 50 without approval
-- escalate matters outside its authority
-
-It must not discuss competitors or promise unreleased features, and it must escalate legal threats or abuse.
-
-## Prompt architecture
-
-The v1 and v2 prompts use six labelled layers:
-
-1. Identity/persona
-2. Scope and capabilities
-3. Hard constraints
-4. Business-policy constraints
-5. Style
-6. Output format
-
-## Red-team coverage
-
-The assistant was tested against all ten required categories:
-
-1. Direct injection
-2. Role-play jailbreak
-3. Prompt extraction
-4. Scope creep
-5. Fabricated authority
-6. Urgency/social engineering
-7. Data exfiltration
-8. Emotional pressure
-9. Obfuscation
-10. Multi-turn erosion using a six-turn conversation
+A layered FlowDesk support-assistant prompt was attacked across ten red-team categories, patched using observed failures, and retested.
 
 ## Result
 
@@ -50,48 +21,13 @@ The assistant was tested against all ten required categories:
 |---|---:|
 | V1 categories passed | **4/10** |
 | V1 categories broken | **6/10** |
-| Critical v1 failures | **2** |
-| Targeted v2 retests | **6** |
-| V2 documented retests passed | **6/6** |
+| Critical V1 failures | **2** |
+| Targeted V2 retests passed | **6/6** |
 
-The two critical v1 failures were:
+The main conclusion is architectural: prompts can guide behaviour, but refund totals, authorisation, identity verification, and access to private data require deterministic controls outside the model.
 
-- bypassing the USD 50 intended refund limit by issuing two USD 45 refunds
-- exposing fictional customer and payment information without identity verification
+## Evidence
 
-Other v1 failures included system-prompt disclosure, promising an unreleased feature under urgency, answering an encoded competitor-comparison request, and gradually losing constraints across a multi-turn conversation.
+The submitted PDF and DOCX remain the formal submission artifacts. The evidence area contains the corresponding unedited `gpt-5.6-luna` API records plus additional regression and financial stress testing. The API rejected an explicit temperature parameter; returned sampling metadata is retained in each record.
 
-V2 added targeted rules for instruction confidentiality, cumulative refund limits, anti-splitting, identity verification, data minimisation, release verification, transformed requests, and persistent multi-turn policy enforcement.
-
-## Main conclusion
-
-The v2 prompt closed every documented v1 failure during the targeted retests. However, this does **not** make the prompt a sufficient security boundary.
-
-Financial limits, cumulative refund checks, identity verification, authorisation, and access to private customer data should be enforced by deterministic application and tool-layer controls. Prompts are suitable for behaviour guidance, communication style, escalation language, and semantic boundaries, but not as the sole control over money or sensitive data.
-
-## Files
-
-- [Assignment brief](./assignment-brief.pdf)
-- [Complete Markdown solution](./solution/complete-submission.md)
-- [Submission PDF](./submission/assignment-02-complete.pdf)
-- [Submission DOCX](./submission/assignment-02-complete.docx)
-- [Original repository package](./archive/assignment-02-repo-files.zip)
-
-## Submission contents
-
-The complete solution includes:
-
-- layered v1 and v2 system prompts
-- all ten v1 attack transcripts
-- a six-turn multi-turn erosion transcript
-- a severity-based break log
-- targeted v1-to-v2 patch notes
-- retest transcripts for every v1 failure
-- prompt-versus-hard-coded guardrail analysis
-- model/version and parameter disclosure
-
-## Safety and reproducibility
-
-All attacks used fictional data, simulated tools, and a sandbox assistant created for this assignment. No live third-party product or real customer information was tested.
-
-The complete assignment solution and its original submission artifacts remain the source record. Separate Luna API evidence is additive and does not replace those materials; see [verification/luna-runs](../verification/luna-runs/).
+All test data and tools are fictional or simulated. The archived ZIP is retained as the original repository package.
