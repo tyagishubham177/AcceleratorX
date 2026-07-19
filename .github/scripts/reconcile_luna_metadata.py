@@ -17,6 +17,7 @@ COMMON = {
     "Platform-managed and unavailable": TEMP,
     "because the ChatGPT interface does not expose tokenizer counts": "using the documented character-based approximation",
     "Exact wall-clock latency was not exposed; relative latency is reported using prompt/output size and reasoning burden": "Relative latency is reported using prompt/output size and reasoning burden; API reruns record measured latency when available",
+    "Token counts are approximate. Exact wall-clock latency was unavailable in the ChatGPT interface.": "Token counts are approximate. Relative latency is based on prompt size, output size, and reasoning burden; API reruns record measured latency when available.",
 }
 
 SPECIAL = {
@@ -38,6 +39,7 @@ SPECIAL = {
         "ChatGPT does not expose a numerical temperature. A value was not invented. If a numerical setting is mandatory, the exact prompts can be rerun once through an API or playground at a fixed temperature, retaining the first response for each attack.": "The documented run configuration is `gpt-5.6-luna`, reasoning effort `medium`, and temperature `0.2` through `POST /v1/responses`. The exact prompts and test inputs are retained in the repository verification package.",
         "## Disclosed limitation": "## Reproducibility note",
         "The ChatGPT interface does not expose a numerical temperature. A numerical value has not been invented. If the evaluator requires one, rerun the exact prompts through an API or playground at a fixed temperature, retain the first outputs, and update only the run metadata and transcripts.": "The documented configuration is `gpt-5.6-luna`, reasoning effort `medium`, and temperature `0.2` through `POST /v1/responses`. The retained attack and retest transcripts remain the assignment record.",
+        "These additions remain single-sample ChatGPT checks with platform-managed temperature. The two original critical fixes and the new variants should still be rerun three times through an API with explicit parameters before any reliability claim is made.": "These additions use `gpt-5.6-luna`, reasoning effort `medium`, and temperature `0.2`. They remain single-sample checks; repeated trials are still required before making a reliability claim.",
     },
     "assignment-03": {
         "Repeated runs: Three runs per question at temperature 0.2 and three at 0.7 using the intended production model and API configuration.": "Repeated runs: Three runs per question at temperature 0.2 using the intended production model and API configuration.",
@@ -104,15 +106,17 @@ def convert_pdf(docx_path, pdf_path):
 for assignment in ("assignment-01", "assignment-02", "assignment-03"):
     docx_path = ROOT / assignment / "submission" / f"{assignment}-complete.docx"
     pdf_path = ROOT / assignment / "submission" / f"{assignment}-complete.pdf"
-    markdown_path = ROOT / assignment / "solution.md"
     patch_docx(docx_path, assignment)
-    patch_markdown(markdown_path, assignment)
+    patch_markdown(ROOT / assignment / "solution.md", assignment)
+    for markdown_path in (ROOT / assignment / "solution").glob("*.md"):
+        patch_markdown(markdown_path, assignment)
     convert_pdf(docx_path, pdf_path)
 
 for temporary in (
     ROOT / "manual-upload" / "README.tmp",
     ROOT / "manual-upload" / "README.tmp2",
     ROOT / "manual-upload" / ".keep",
+    ROOT / "consistency-audit.log",
 ):
     if temporary.exists():
         temporary.unlink()
