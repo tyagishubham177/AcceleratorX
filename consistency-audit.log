@@ -2,7 +2,6 @@ convert /home/runner/work/AcceleratorX/AcceleratorX/assignment-01/submission/ass
 convert /home/runner/work/AcceleratorX/AcceleratorX/assignment-02/submission/assignment-02-complete.docx as a Writer document -> /home/runner/work/AcceleratorX/AcceleratorX/.tmp-pdf/assignment-02-complete.pdf using filter : writer_pdf_Export
 convert /home/runner/work/AcceleratorX/AcceleratorX/assignment-03/submission/assignment-03-complete.docx as a Writer document -> /home/runner/work/AcceleratorX/AcceleratorX/.tmp-pdf/assignment-03-complete.pdf using filter : writer_pdf_Export
 CONSISTENCY AUDIT FAILED
-AGENTS.md contains 'platform-managed'
 assignment-01/solution.md contains 'chatgpt'
 assignment-02/solution/appendix-regression-and-stress-tests.md contains 'chatgpt'
 assignment-02/solution/appendix-regression-and-stress-tests.md contains 'platform-managed'
