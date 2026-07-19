@@ -6,6 +6,7 @@
 ## Start here
 
 - [Final submission PDF](./submission/assignment-03-complete.pdf)
+- [Editable submission DOCX](./submission/assignment-03-complete.docx)
 - [Readable GitHub solution](./solution.md)
 - [Assignment brief](./assignment-brief.pdf)
 - [Evaluation tracker XLSX](./submission/assignment-03-evaluation-tracker.xlsx)
