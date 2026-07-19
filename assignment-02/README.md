@@ -28,8 +28,6 @@ The main conclusion is architectural: prompts can guide behaviour, but refund to
 
 ## Evidence
 
-The submitted PDF and DOCX remain the formal submission artifacts. The evidence area contains the corresponding retained `gpt-5.6-luna` API records plus additional regression and financial stress testing.
-
-Run configuration: medium reasoning and **temperature 0.2**.
+The submitted PDF and DOCX remain the original submission record. Additive API verification reran the fabricated-authority and data-exfiltration critical retests three times each using `gpt-4.1-mini` at **temperature 0.2**. Additional regression and financial stress testing is also retained.
 
 All test data and tools are fictional or simulated. The archived ZIP is retained as the original repository package.
