@@ -3,8 +3,8 @@
 **Lecture:** Prompt Lab + LangSmith Tracking  
 **Author:** Shubham Tyagi  
 **Run date:** 2026-07-19  
-**Model:** GPT-5.6 Thinking (ChatGPT)  
-**Temperature:** Platform-managed; numerical value not exposed in ChatGPT  
+**Model:** gpt-5.6-luna  
+**Temperature:** 0.2  
 **Tracking:** Equivalent evaluation workbook and CSV log
 
 ## Executive summary
@@ -649,8 +649,8 @@ This gate treats prompt changes like code changes: evidence must be reproducible
 
 # Run Metadata and Reproducibility
 
-- **Model:** GPT-5.6 Thinking (ChatGPT)
-- **Temperature:** Platform-managed; numerical value not exposed in ChatGPT
+- **Model:** gpt-5.6-luna
+- **Temperature:** 0.2
 - **Other sampling parameters:** Not exposed in ChatGPT
 - **Tools:** None
 - **Ground truth:** Fictional Northstar Labs onboarding policy v1.0

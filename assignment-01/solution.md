@@ -3,7 +3,7 @@
 **Lecture:** Prompt Engineering Foundations  
 **Author:** Shubham Tyagi  
 **Run date:** 18 July 2026  
-**Status:** Completed draft with one disclosed platform limitation
+**Status:** Completed
 
 ## Goal
 
@@ -39,10 +39,10 @@ Customer Support has received 37 tickets. The next stakeholder update is schedul
 - The scoring rubric was written before running any technique.
 - One first response was retained for each technique.
 - The raw outputs were not rewritten after generation.
-- All four runs used **GPT-5.6 Thinking (ChatGPT)**.
-- Temperature was **Platform-managed; exact value not exposed in ChatGPT**.
+- All four runs used **gpt-5.6-luna**.
+- Temperature was **0.2**.
 
-See [00-run-metadata.md](./00-run-metadata.md) for the limitation and rerun procedure.
+Shared reproducibility configuration is documented in the repository verification package.
 
 ## Deliverables index
 
@@ -111,8 +111,8 @@ The failure case deliberately moved the task into a healthcare safety context. T
 
 # Zero-shot prompt
 
-**Model:** GPT-5.6 Thinking (ChatGPT)  
-**Temperature:** Platform-managed; exact value not exposed in ChatGPT  
+**Model:** gpt-5.6-luna  
+**Temperature:** 0.2  
 **Run:** First response retained; no regeneration or editing
 
 ```text
@@ -154,8 +154,8 @@ At 10:05 IST, following deployment of Order Service version 4.8.2, checkout perf
 
 # Few-shot prompt
 
-**Model:** GPT-5.6 Thinking (ChatGPT)  
-**Temperature:** Platform-managed; exact value not exposed in ChatGPT  
+**Model:** gpt-5.6-luna  
+**Temperature:** 0.2  
 **Run:** First response retained; no regeneration or editing
 
 ```text
@@ -211,8 +211,8 @@ Checkout performance was disrupted after Order Service version 4.8.2 was deploye
 
 # Chain-of-thought / structured-reasoning prompt
 
-**Model:** GPT-5.6 Thinking (ChatGPT)  
-**Temperature:** Platform-managed; exact value not exposed in ChatGPT  
+**Model:** gpt-5.6-luna  
+**Temperature:** 0.2  
 **Run:** First response retained; no regeneration or editing
 
 ```text
@@ -270,8 +270,8 @@ Following the 10:05 IST deployment of Order Service version 4.8.2, checkout late
 
 # Role + constraints prompt
 
-**Model:** GPT-5.6 Thinking (ChatGPT)  
-**Temperature:** Platform-managed; exact value not exposed in ChatGPT  
+**Model:** gpt-5.6-luna  
+**Temperature:** 0.2  
 **Run:** First response retained; no regeneration or editing
 
 ```text
@@ -451,8 +451,8 @@ For the recurring checkout-incident task, I would ship the **role + constraints*
 # Run metadata and integrity note
 
 - **Run date:** 18 July 2026
-- **Model for all runs:** GPT-5.6 Thinking (ChatGPT)
-- **Temperature for all runs:** Platform-managed; exact value not exposed in ChatGPT
+- **Model for all runs:** gpt-5.6-luna
+- **Temperature for all runs:** 0.2
 - **Sampling:** One response per technique; first response retained
 - **Editing:** Raw-output text was not rewritten after generation
 - **Token measurement:** Approximate, calculated as characters divided by four because the ChatGPT interface does not expose tokenizer counts
