@@ -1,20 +1,18 @@
 # Assignment 1 evidence
 
-This folder is the assignment-level entry point for reproducibility evidence.
+This folder is the assignment-level entry point for additive reproducibility evidence.
 
-## Active API runs
+## API runs
 
-The repository contains six retained `gpt-5.6-luna` runs for Assignment 1:
+Assignment 1 has 12 retained API records:
 
-- zero-shot;
-- few-shot;
-- structured reasoning;
-- role and constraints;
-- healthcare structured reasoning; and
-- healthcare role and constraints.
+- primary role + constraints: 3 runs;
+- primary structured reasoning: 3 runs;
+- healthcare role + constraints: 3 runs; and
+- healthcare structured reasoning: 3 runs.
 
-The frozen prompts, request hashes, timestamps, latency, usage, response IDs, and raw responses are stored in the shared [`verification/luna-runs/`](../../verification/luna-runs/) archive. The source definitions are in [`verification/luna-source-matrix.json`](../../verification/luna-source-matrix.json).
+Configuration: `gpt-4.1-mini-2025-04-14`, `POST /v1/chat/completions`, **temperature 0.2**.
 
-Run configuration: `gpt-5.6-luna`, medium reasoning, **temperature 0.2**.
+The unedited JSON records, response IDs, timestamps, latency, usage, prompt hashes, and outputs are stored in [`verification/api-runs/`](../../verification/api-runs/). See the shared [verification guide](../../verification/README.md) and [manifest](../../verification/api-runs/manifest.json).
 
-The final submitted PDF remains the primary formatted assignment record; these API runs are additive reproducibility evidence.
+The final submitted PDF remains the original formatted assignment record; these API runs are additive verification.
