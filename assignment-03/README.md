@@ -9,12 +9,14 @@
 - [Readable GitHub solution](./solution.md)
 - [Assignment brief](./assignment-brief.pdf)
 - [Editable submission DOCX](./submission/assignment-03-complete.docx)
-- [Evaluation tracker](./submission/assignment-03-evaluation-tracker.xlsx)
+- [Evaluation tracker XLSX](./submission/assignment-03-evaluation-tracker.xlsx)
+- [Policy one-pager PDF](./submission/assignment-03-policy-one-pager.pdf)
+- [Tracking dashboard PNG](./submission/assignment-03-tracking-dashboard.png)
 - [Evidence guide](./evidence/README.md)
 
 ## What was tested
 
-A fictional employee-onboarding assistant was evaluated across three prompt versions using a frozen policy, a fixed eight-question test set, and a pre-committed rubric.
+A fictional Northstar Labs onboarding assistant was evaluated across three prompt versions using a frozen policy, fixed rubric, and eight-question test set.
 
 ## Result
 
@@ -24,12 +26,12 @@ A fictional employee-onboarding assistant was evaluated across three prompt vers
 | V2 | 93/96 | 96.9% | 8/8 | 0 |
 | V3 | **95/96** | **99.0%** | **8/8** | **0** |
 
-V3 retained V2's factual controls while improving presentation flexibility. It is the best tested version, but the proposed production gate still requires broader repeated testing and independent review.
+V3 preserved the factual controls introduced in V2 while removing the unnecessary mandatory response template. It was the best tested version, though a larger release-gate evaluation would still be required for production use.
 
 ## Evidence
 
-The submitted PDF, DOCX, evaluation workbook, policy one-pager, and dashboard remain the formal assignment artifacts. The repository also contains 24 unedited `gpt-5.6-luna` API records covering all eight questions across V1, V2, and V3.
+The submitted PDF, DOCX, workbook, policy files, and dashboard remain the formal assignment artifacts. The repository contains 24 retained `gpt-5.6-luna` API records covering all eight questions across V1, V2, and V3.
 
-The API responses report **temperature 1.0** and **top_p 0.98**. These were returned sampling defaults, not values explicitly supplied in the request.
+Run configuration: medium reasoning and **temperature 0.2**.
 
 The archived ZIP is retained as the original repository package.
