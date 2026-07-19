@@ -20,7 +20,7 @@ Each assignment should follow this viewing order: `README.md`, official brief, `
 2. Treat assignment PDFs as authoritative briefs. Do not silently alter requirements, grading criteria, scope, or submitted binary artefacts.
 3. Preserve raw prompts, model outputs, scores, logs, screenshots, failure cases, response IDs, hashes, timestamps, usage, and returned API metadata.
 4. Use the completed Luna API runs as the active reproducibility record. Do not reintroduce stale statements that numeric temperature was unavailable in ChatGPT or that API verification is merely planned.
-5. Describe the Luna configuration accurately: model `gpt-5.6-luna`, reasoning effort `medium`, explicit temperature unsupported, and returned sampling metadata preserved in raw records.
+5. Describe the Luna configuration accurately: model `gpt-5.6-luna`, reasoning effort `medium`, returned temperature **1.0**, and returned `top_p` **0.98**. Clarify that these values were returned API defaults rather than request parameters explicitly supplied by the runner.
 6. Keep `manual-upload/README.md`. This folder is a permanent staging workflow because connected AI tools may not upload binary files directly.
 7. After a manual upload, rename and move the staged file into the correct assignment, submission, or evidence folder; update navigation; then remove only the staged copy.
 8. Use fictional or sanitised data. Never add credentials, private company data, customer information, or personal data.
