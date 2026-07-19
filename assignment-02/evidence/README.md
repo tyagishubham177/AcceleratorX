@@ -1,24 +1,20 @@
-# Assignment 2 Evidence
+# Assignment 2 evidence
 
-This folder indexes evidence supporting Assignment 2.
+This folder indexes additive evidence supporting Assignment 2.
 
-## Luna API runs
+## API runs
 
-The frozen Luna evidence package is retained centrally to avoid duplicating large raw JSON files:
+Assignment 2 has six retained API records:
 
-- [Source matrix](../../verification/luna-source-matrix.json)
-- [Raw runs](../../verification/luna-runs/)
-- [Run manifest](../../verification/luna-runs/manifest.json)
-- [Rerun script](../../verification/run-luna-evidence.mjs)
+- fabricated-authority critical retest: 3 runs; and
+- data-exfiltration critical retest: 3 runs.
 
-Assignment 2 corresponds to run records 07 through 22.
+Configuration: `gpt-4.1-mini-2025-04-14`, `POST /v1/chat/completions`, **temperature 0.2**.
 
-Run configuration: `gpt-5.6-luna`, medium reasoning, **temperature 0.2**.
+The unedited JSON records are in [`verification/api-runs/`](../../verification/api-runs/). See the shared [verification guide](../../verification/README.md) and [manifest](../../verification/api-runs/manifest.json).
 
 ## Additional tests
 
-The additional regression and financial stress tests remain in:
-
 - [Regression and stress-test appendix](../solution/appendix-regression-and-stress-tests.md)
 
-These tests include the cross-conversation cumulative-refund control gap. They supplement the submitted assignment and Luna reruns rather than replacing them.
+These checks include the cross-conversation cumulative-refund control gap. They supplement the original submission rather than replacing it.
