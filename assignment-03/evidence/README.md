@@ -13,14 +13,7 @@ The frozen Luna evidence package is retained centrally to avoid duplicating larg
 
 Assignment 3 corresponds to run records 23 through 46.
 
-Run configuration:
-
-- Model: `gpt-5.6-luna`
-- Reasoning effort: `medium`
-- Returned temperature: **1.0**
-- Returned `top_p`: **0.98**
-
-Temperature and `top_p` were returned by the API as model defaults; the runner did not explicitly supply them in the request.
+Run configuration: `gpt-5.6-luna`, medium reasoning, **temperature 0.2**.
 
 ## Submission evidence
 
