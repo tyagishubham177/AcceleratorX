@@ -34,8 +34,13 @@ jobs:
 
       - name: Patch documents and capture exact audit findings
         run: |
-          python .github/scripts/reconcile_luna_metadata.py > consistency-audit.log 2>&1 || true
-          cat consistency-audit.log
+          set +e
+          python .github/scripts/reconcile_luna_metadata.py > /tmp/consistency-audit.log 2>&1
+          status=$?
+          cat /tmp/consistency-audit.log
+          cp /tmp/consistency-audit.log consistency-audit.log
+          echo "audit_status=$status"
+          exit 0
 
       - name: Commit generated documents and diagnostic report
         run: |
