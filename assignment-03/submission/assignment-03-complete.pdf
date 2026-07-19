@@ -1,74 +1,56 @@
 %PDF-1.4
-%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
-<<
-/F1 2 0 R /F2 3 0 R
->>
+<< /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<<
-/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
->>
+<< /Type /Pages /Kids [4 0 R 6 0 R] /Count 2 >>
 endobj
 3 0 obj
-<<
-/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 4 0 obj
-<<
-/Contents 8 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 7 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
-
->> 
-  /Type /Page
->>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
 endobj
 5 0 obj
-<<
-/PageMode /UseNone /Pages 7 0 R /Type /Catalog
->>
+<< /Length 608 >>
+stream
+BT /F1 24 Tf 72 720 Td (Prompting as an Engineering Practice) Tj ET
+BT /F1 15 Tf 72 680 Td (Prompt Lab and Tracking) Tj ET
+BT /F1 11 Tf 72 635 Td (Model: gpt-5.6-luna) Tj ET
+BT /F1 11 Tf 72 607 Td (Endpoint: POST /v1/responses) Tj ET
+BT /F1 11 Tf 72 579 Td (Reasoning effort: medium) Tj ET
+BT /F1 11 Tf 72 551 Td (Temperature: 0.2) Tj ET
+BT /F1 11 Tf 72 523 Td (Author: Shubham Tyagi) Tj ET
+BT /F1 11 Tf 72 495 Td (Run date: 18 July 2026) Tj ET
+BT /F1 11 Tf 72 467 Td (This PDF is the active repository edition.) Tj ET
+BT /F1 11 Tf 72 439 Td (All configuration references use Luna at temperature 0.2.) Tj ET
+endstream
 endobj
 6 0 obj
-<<
-/Author (\(anonymous\)) /CreationDate (D:20260719084007+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260719084007+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
->>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
 endobj
 7 0 obj
-<<
-/Count 1 /Kids [ 4 0 R ] /Type /Pages
->>
-endobj
-8 0 obj
-<<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 749
->>
+<< /Length 419 >>
 stream
-GasIe9lo#B&A@Zcp.-ulC45n&[q6uS-&4>;a^$WZ;2]!8$(1A:G9ssi.FU!gd-a*4IJXci"^O7J])gi`L!O*dDuo>-\7,g!-[9GT^F&l?=XdBBY+[<Zj)m^h'J+:OpCjRi-V-hZ"5sOt.cH42Tde**<Ci"VF-qC__=hb3(I?oqZQFsF[&sWI^pm1erda\Pb(>o?U#=>kefjmSo^#9gD260E)(/<K*l3^-GIjrfQ^'[SVf.9*">H\<RY\8,b=_!!DGJFf5S>G'_^-I'_1CC55<P>m@R#X6q#)J4B7:Z]\+tlDC!Q$4n6^/ZHA^Sm?gp3c)CEdXbJ\W$ME]\?i>gF:COdFOKSUf"RH]]R+bG9!++L$fgmZd57&kcfOhn($dk*.h.60!mhP^oN2u:u3VRr[1+aAqKQ%kOOJluK/LMh4]O/i7=IEjblTi_Q'JfUn18tpV,Tk.7>Bim3m_sEijn!@rl\=9^W=/Dq\=>`O)dQCNn,]Y^DOl*1u9Q3iq<>/M[\BBrHS@D*&Ea:A)+$E%$8B,Iu]H]r:aiS)4/]'3eEHRoN3H*=[qK8<B<mF_bB6#\KbG:Fue*N4CR*uj.@Ed`i@PR_(%6*5#DMAgd:e[$ps2Jbm=JIfpj7+%^@,gOr8i*1,s7oRCqVr-#=7Y[sVJp4SnRPNk2bZlEh![hH["21`O28i`^B8VB4[u?k/nQc5`s$b;FU06Z%Wj3Xah-^5YHar>1Hh<L1qS"\TbWsm!St:J3<~>endstream
+BT /F1 20 Tf 72 720 Td (Verification and repository notes) Tj ET
+BT /F1 11 Tf 72 675 Td (The exact inputs are frozen in verification/luna-source-matrix.json.) Tj ET
+BT /F1 11 Tf 72 647 Td (The runner is verification/run-luna-evidence.mjs.) Tj ET
+BT /F1 11 Tf 72 619 Td (The manifest records 46 configured cases.) Tj ET
+BT /F1 11 Tf 72 591 Td (For full content, use solution.md and the assignment evidence guide.) Tj ET
+endstream
 endobj
 xref
-0 9
+0 8
 0000000000 65535 f 
-0000000061 00000 n 
-0000000102 00000 n 
-0000000209 00000 n 
-0000000321 00000 n 
-0000000524 00000 n 
-0000000592 00000 n 
-0000000872 00000 n 
-0000000931 00000 n 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000000317 00000 n 
+0000000975 00000 n 
+0000001101 00000 n 
 trailer
-<<
-/ID 
-[<9f4850ac5ee8cdea5129c6761ccf5121><9f4850ac5ee8cdea5129c6761ccf5121>]
-% ReportLab generated PDF document -- digest (opensource)
-
-/Info 6 0 R
-/Root 5 0 R
-/Size 9
->>
+<< /Size 8 /Root 1 0 R >>
 startxref
-1770
+1570
 %%EOF

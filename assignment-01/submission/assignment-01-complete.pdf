@@ -1,20 +1,56 @@
 %PDF-1.4
-%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
-<<
-/F1 2 0 R /F2 3 0 R
->>
+<< /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<<
-/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
->>
+<< /Type /Pages /Kids [4 0 R 6 0 R] /Count 2 >>
 endobj
 3 0 obj
-<<
-/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
->>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 4 0 obj
-<<
-/Contents 8 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 7 0 R /Resources
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 599 >>
+stream
+BT /F1 24 Tf 72 720 Td (The Technique Ladder) Tj ET
+BT /F1 15 Tf 72 680 Td (Prompt Engineering Foundations) Tj ET
+BT /F1 11 Tf 72 635 Td (Model: gpt-5.6-luna) Tj ET
+BT /F1 11 Tf 72 607 Td (Endpoint: POST /v1/responses) Tj ET
+BT /F1 11 Tf 72 579 Td (Reasoning effort: medium) Tj ET
+BT /F1 11 Tf 72 551 Td (Temperature: 0.2) Tj ET
+BT /F1 11 Tf 72 523 Td (Author: Shubham Tyagi) Tj ET
+BT /F1 11 Tf 72 495 Td (Run date: 18 July 2026) Tj ET
+BT /F1 11 Tf 72 467 Td (This PDF is the active repository edition.) Tj ET
+BT /F1 11 Tf 72 439 Td (All configuration references use Luna at temperature 0.2.) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 419 >>
+stream
+BT /F1 20 Tf 72 720 Td (Verification and repository notes) Tj ET
+BT /F1 11 Tf 72 675 Td (The exact inputs are frozen in verification/luna-source-matrix.json.) Tj ET
+BT /F1 11 Tf 72 647 Td (The runner is verification/run-luna-evidence.mjs.) Tj ET
+BT /F1 11 Tf 72 619 Td (The manifest records 46 configured cases.) Tj ET
+BT /F1 11 Tf 72 591 Td (For full content, use solution.md and the assignment evidence guide.) Tj ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000000317 00000 n 
+0000000966 00000 n 
+0000001092 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+1561
+%%EOF
